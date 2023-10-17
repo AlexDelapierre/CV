@@ -1,0 +1,143 @@
+/* GENERAL */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: #4472c4;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h2 {
+  margin: 0 0 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.text-blue {
+  color: #4472c4;
+}
+
+.text-darkblue {
+  color: #002060;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+/* LEFT COLUMN */
+.left-column {
+  grid-area: left-column;
+  padding: 50px;
+  background-color: #4472c4;
+  color: white;
+}
+
+.portait {
+  border-radius: 50%;
+  max-width: 150px;
+  margin: auto;
+  display: block;
+  margin-bottom: 50px;
+}
+
+.skills {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  margin: 0 0 1rem;
+}
+
+/* HEADER */
+.header {
+  grid-area: header;
+  padding: 50px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.infos {
+  columns: 2;
+  list-style-type: none;
+  padding: 0;
+}
+
+/* CONTENT */
+.content {
+  grid-area: content;
+  padding: 50px;
+}
+
+.experience-list {
+  list-style-type: circle;
+}
+
+/* média queries mobile */
+@media screen and (max-width: 1000px) {
+  #left-column-mobile{
+    display: block;
+  }
+  #left-column-desktop{
+    display: none;
+  }
+  #right-column-header{
+    display: none;
+  }
+  #h1-mobile{
+    text-align: center;
+  }
+}  
+
+/* média queries desktop */
+@media screen and (min-width: 1000px) {
+  .cv-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+      "left-column header"
+      "left-column content";
+    width: 70vw;
+    margin: 3vw auto;
+    box-shadow: 0 10px 20px 0 #777;
+  }
+  #left-column-mobile{
+    display: none;
+  }
+  #left-column-desktop{
+    display: block;
+  }
+}  
