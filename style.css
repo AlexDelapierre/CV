@@ -26,7 +26,7 @@ p {
 
 h1 {
   margin: 0 0 1rem;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
@@ -88,6 +88,14 @@ h2 {
   display: block
 } 
 
+#contact ul {
+  text-align: left;
+}
+
+#contact li {
+  list-style-type: none;
+}
+
 #socials a p {
   color: white;
 }
@@ -127,7 +135,7 @@ h2 {
 }
 
 /* média queries mobile */
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   #left-column-mobile{
     display: block;
   }
@@ -143,10 +151,10 @@ h2 {
   #h1-mobile p{
     font-size: 1.5rem;
   } 
-}  
+}   */
 
 /* média queries desktop */
-@media screen and (min-width: 1000px) {
+ @media screen and (min-width: 1000px) {
   .cv-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -157,87 +165,26 @@ h2 {
     margin: 3vw auto;
     box-shadow: 0 10px 20px 0 #777;
   }
-  #left-column-mobile{
+  /* #left-column-mobile{
     display: none;
   }
   #left-column-desktop{
     display: block;
-  }
+  }  */
 } 
 
 @media print {
-  #info rect {
-    stroke: grey;
-  }
-  body {
-    zoom: 0.793;
-    margin-top: -1em;
-  }
-  .sidebar img:first-of-type {
-    margin-top: -5px;
-  }
-  #education {
-    position: relative;
-    top: 6px;
-  }
-  .sidebar h1,
-  .sidebar h2 {
-    color: #444;
-  }
-  .pagebreaker {
-    clear: both;
-    page-break-before: always;
-    page-break-after: always;
-  }
-  .noprint {
-    display: none;
-  }
-  .content {
-    box-shadow: 0 0 0 0 white;
+  .cv-container {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-areas: 
+      "left-column header"
+      "left-column content";
+    width: 100vw;
     margin: 0;
   }
-  .pane,
-  .sidebar {
-    padding: 1.5em;
+  .left-column {
+    padding: 20px;
   }
-  #summary + img,
-  h2 + img {
-    box-shadow: none;
-  }
-  body,
-  .sidebar {
-    background-color: white;
-    color: black;
-  }
-  .sidebar {
-    width: 30%;
-  }
-  .sidebar h4,
-  .sidebar h5,
-  #overview,
-  .sidebar a,
-  .pane h3 {
-    color: #2c3437;
-  }
-  .palm {
-    fill: #aaa;
-  }
-  .sidebar text {
-    color: black !important;
-  }
-  #info svg {
-    fill: #aaa;
-  }
-  #languages_1 {
-    margin-bottom: 1em;
-  }
-  #pdf {
-    display: none;
-  }
-  #info {
-    margin-bottom: 30em;
-  }
-  h4.language {
-    margin-top: 1em;
-  }
+  
 }
