@@ -13,9 +13,10 @@ body {
 
 a {
   text-decoration: none;
-  /* color: #4472c4; */
 }
-
+.left-column a {
+  color: white;
+}
 a:hover {
   text-decoration: underline;
 }
@@ -28,6 +29,8 @@ h1 {
   margin: 0 0 1rem;
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  
+  line-height: 2rem;
 }
 
 h2 {
@@ -88,8 +91,13 @@ h2 {
   display: block
 } 
 
+#contact {
+  font-size: 0.8rem;
+}
+
 #contact ul {
   text-align: left;
+  padding-left: 0;
 }
 
 #contact li {
@@ -134,6 +142,10 @@ h2 {
   list-style-type: circle;
 }
 
+.skills li{
+  font-size: 0.9rem;
+}
+
 /* média queries mobile */
 /* @media screen and (max-width: 1000px) {
   #left-column-mobile{
@@ -145,13 +157,14 @@ h2 {
   #right-column-header{
     display: none;
   }
-  #h1-mobile{
-    text-align: center;
-  }
   #h1-mobile p{
     font-size: 1.5rem;
   } 
 }   */
+
+#h1-mobile{
+  text-align: center;
+}
 
 /* média queries desktop */
  @media screen and (min-width: 1000px) {
@@ -187,4 +200,7 @@ h2 {
     padding: 20px;
   }
   
+}
+.date{
+  margin-left: 1rem;
 }
