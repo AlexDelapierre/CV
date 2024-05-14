@@ -168,6 +168,17 @@ h2 {
   text-align: center;
 }
 
+/* SVG */
+.Github_Icon {
+  width: 20px; /* Largeur souhaitée */
+  height: 20px; /* Hauteur souhaitée */
+}
+
+.Link_Icon {
+  width: 20px; /* Largeur souhaitée */
+  height: 20px; /* Hauteur souhaitée */
+}
+
 /* média queries desktop */
  @media screen and (min-width: 1000px) {
   .cv-container {
