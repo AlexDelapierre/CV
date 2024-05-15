@@ -7,16 +7,14 @@
 body {
   font-family: Roboto;
   font-weight: 300;
-  /* font-size: 0.9rem; */
+  font-size: 1rem;
   line-height: 1.5;
 }
 
 a {
   text-decoration: none;
 }
-.left-column a {
-  color: white;
-}
+
 a:hover {
   text-decoration: underline;
 }
@@ -29,7 +27,6 @@ h1 {
   margin: 0 0 1rem;
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  
   line-height: 2rem;
 }
 
@@ -62,8 +59,13 @@ h2 {
 /* LEFT COLUMN */
 .left-column {
   grid-area: left-column;
+  min-height: 100vh;
   padding: 50px;
   background-color: #4472c4;
+  color: white;
+}
+
+.left-column a {
   color: white;
 }
 
@@ -91,6 +93,11 @@ h2 {
   display: block
 } 
 
+#h1-div{
+  text-align: center;
+}
+
+/* CONTACT */
 #contact {
  
 }
@@ -110,6 +117,7 @@ h2 {
   height: 15px;
 }
 
+/* COMPÉTENCES */
 .skills {
   list-style-type: none;
   padding: 0;
@@ -118,55 +126,34 @@ h2 {
   margin: 0 0 1rem;
 }
 
-/* HEADER */
-.header {
-  grid-area: header;
-  padding: 50px;
-  background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .infos {
   columns: 2;
   list-style-type: none;
   padding: 0;
 }
 
+/* RIGHT COLUMN */
 /* CONTENT */
 .content {
   grid-area: content;
-  padding: 50px;
+  padding: 45px;
 }
 
-.experience-list {
+.technical-skills {
   list-style-type: circle;
 }
 
-.skills li{
+.technical-skills li{
   font-size: 0.9rem;
 }
 
-/* média queries mobile */
-/* @media screen and (max-width: 1000px) {
-  #left-column-mobile{
-    display: block;
-  }
-  #left-column-desktop{
-    display: none;
-  }
-  #right-column-header{
-    display: none;
-  }
-  #h1-mobile p{
-    font-size: 1.5rem;
-  } 
-}   */
-
-#h1-mobile{
-  text-align: center;
+.date{
+  margin-left: 1rem;
 }
+
+/* #others-experiences {
+  margin-bottom: 5px;
+} 
 
 /* SVG */
 .Github_Icon {
@@ -179,24 +166,19 @@ h2 {
   height: 20px; /* Hauteur souhaitée */
 }
 
+
+
 /* média queries desktop */
  @media screen and (min-width: 1000px) {
   .cv-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-template-areas: 
-      "left-column header"
       "left-column content";
     width: 70vw;
     margin: 3vw auto;
     box-shadow: 0 10px 20px 0 #777;
   }
-  /* #left-column-mobile{
-    display: none;
-  }
-  #left-column-desktop{
-    display: block;
-  }  */
 } 
 
 @media print {
@@ -204,7 +186,6 @@ h2 {
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-areas: 
-      "left-column header"
       "left-column content";
     width: 100vw;
     margin: 0;
@@ -212,8 +193,4 @@ h2 {
   .left-column {
     padding: 20px;
   }
-  
-}
-.date{
-  margin-left: 1rem;
 }
