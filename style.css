@@ -139,6 +139,10 @@ h2 {
   padding: 45px;
 }
 
+#projets, #others-experiences {
+  margin-top: 40px;
+}
+
 .technical-skills {
   list-style-type: circle;
 }
@@ -155,7 +159,16 @@ h2 {
   margin-bottom: 5px;
 } 
 
+
 /* SVG */
+
+.icons {
+  position: relative;
+  top:5px;
+  max-width: 20px;
+  max-height: 20px;
+}
+
 .Github_Icon {
   width: 20px; /* Largeur souhaitée */
   height: 20px; /* Hauteur souhaitée */
