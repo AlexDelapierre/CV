@@ -57,7 +57,7 @@ h2 {
 }
 
 /* LEFT COLUMN */
-.left-column {
+#left-column {
   grid-area: left-column;
   min-height: 100vh;
   padding: 50px;
@@ -65,8 +65,16 @@ h2 {
   color: white;
 }
 
-.left-column a {
+#left-column .section {
+  margin-top: 3vh;
+}
+
+#left-column a {
   color: white;
+}
+
+#left-column h2 {
+  font-size: 1.2em;
 }
 
 .portrait-cont {
@@ -121,7 +129,7 @@ h2 {
 .skills {
   list-style-type: none;
   padding: 0;
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   letter-spacing: 1px;
   margin: 0 0 1rem;
 }
@@ -203,7 +211,7 @@ h2 {
     width: 100vw;
     margin: 0;
   }
-  .left-column {
+  #left-column {
     padding: 20px;
   }
 }
