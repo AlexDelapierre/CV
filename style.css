@@ -105,9 +105,9 @@ h2 {
   text-align: center;
 }
 
-/* #h1-div p{
-  font-size: 1em;
-} */
+#job-title{
+  font-size: 1.3em;
+}
 
 /* CONTACT */
 #contact {
