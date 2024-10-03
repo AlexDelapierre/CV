@@ -60,7 +60,7 @@ h2 {
 #left-column {
   grid-area: left-column;
   min-height: 100vh;
-  padding: 50px;
+  padding: 40px;
   background-color: #4472c4;
   color: white;
 }
@@ -107,6 +107,10 @@ h2 {
 
 #job-title{
   font-size: 1.3em;
+}
+
+#profil p {
+  font-size: 0.9rem;
 }
 
 /* CONTACT */
