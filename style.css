@@ -31,7 +31,6 @@ h1 {
 }
 
 h2 {
-  margin: 0 0 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -65,10 +64,12 @@ h2 {
   color: white;
 }
 
+#left-column h2 {
+  margin: 2rem 0 0.5rem;
+}
 #left-column .section {
   margin-top: 3vh;
 }
-
 #left-column a {
   color: white;
 }
@@ -153,6 +154,10 @@ h2 {
 .content {
   grid-area: content;
   padding: 45px;
+}
+
+#right-column h2 {
+  margin: 0 0 1rem;
 }
 
 #projets, #others-experiences {
