@@ -25,7 +25,8 @@ p {
 
 h1 {
   margin: 0 0 1rem;
-  font-size: 2rem;
+  font-size: 1.8rem;
+  /* font-size: 1.5rem; */
   margin-bottom: 0.5rem;
   line-height: 2rem;
 }
@@ -107,7 +108,8 @@ h2 {
 }
 
 #job-title{
-  font-size: 1.3em;
+  font-size: 1.5em;
+  /* font-size: 1.1em; */
 }
 
 #profil p {
