@@ -26,7 +26,6 @@ p {
 h1 {
   margin: 0 0 1rem;
   font-size: 1.8rem;
-  /* font-size: 1.5rem; */
   margin-bottom: 0.5rem;
   line-height: 2rem;
 }
@@ -110,7 +109,6 @@ h2 {
 
 #job-title{
   font-size: 1.4em;
-  /* font-size: 1.1em; */
 }
 
 #profil p {
@@ -174,11 +172,6 @@ h2 {
   margin-left: 1rem;
 }
 
-/* #others-experiences {
-  margin-bottom: 5px;
-} 
-
-
 /* SVG */
 
 .icons {
@@ -189,13 +182,13 @@ h2 {
 }
 
 .Github_Icon {
-  width: 20px; /* Largeur souhaitée */
-  height: 20px; /* Hauteur souhaitée */
+  width: 20px; 
+  height: 20px; 
 }
 
 .Link_Icon {
-  width: 20px; /* Largeur souhaitée */
-  height: 20px; /* Hauteur souhaitée */
+  width: 20px; 
+  height: 20px; 
 }
 
 
