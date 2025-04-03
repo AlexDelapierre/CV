@@ -93,6 +93,7 @@ h2 {
   .portrait-cont {
       width: 12rem;
       height: 12rem;
+      border: 4px solid #ccc;
   }
 }
 
@@ -108,19 +109,18 @@ h2 {
 }
 
 #job-title{
-  font-size: 1.5em;
+  font-size: 1.4em;
   /* font-size: 1.1em; */
 }
 
 #profil p {
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 /* CONTACT */
 #contact ul {
   text-align: left;
   padding-left: 0;
-  font-size: 0.8rem;
 }
 
 #contact li {
@@ -224,5 +224,9 @@ h2 {
   }
   #left-column {
     padding: 20px;
+  }
+  /* CONTACT */
+  #contact ul {
+    font-size: 0.8rem;
   }
 }
