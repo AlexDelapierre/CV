@@ -11,6 +11,10 @@ body {
   line-height: 1.5;
 }
 
+/* section {
+  margin-bottom: 1rem;
+} */
+
 a {
   text-decoration: none;
 }
@@ -155,7 +159,7 @@ h2 {
 }
 
 #right-column h2 {
-  margin: 0 0 1rem;
+  margin: 0  0 1rem;
 }
 
 #projets, #others-experiences {
