@@ -47,10 +47,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.icon {
-  margin-right: 0.5rem;
-}
-
 .section {
   margin-bottom: 1.5rem;
 }
@@ -104,7 +100,7 @@ h2 {
 } 
 
 #h1-div{
-  text-align: center;
+  /* text-align: center; */
 }
 
 #job-title{
@@ -125,9 +121,8 @@ h2 {
   list-style-type: none;
 }
 
-.icons {
-  width: 15px;
-  height: 15px;
+#contact #mail {
+    font-size: 0.8rem;
 }
 
 /* COMPÉTENCES */
@@ -174,11 +169,20 @@ h2 {
 
 /* SVG */
 
+.icon {
+  margin-right: 0.5rem;
+}
+
 .icons {
   position: relative;
   top:5px;
   max-width: 20px;
   max-height: 20px;
+}
+
+.icons {
+  width: 15px;
+  height: 15px;
 }
 
 .Github_Icon {
@@ -218,6 +222,6 @@ h2 {
   }
   /* CONTACT */
   #contact ul {
-    font-size: 0.8rem;
+    /* font-size: 0.8rem; */
   }
 }
