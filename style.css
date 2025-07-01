@@ -48,7 +48,7 @@ h2 {
 }
 
 .section {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* LEFT COLUMN */
@@ -61,6 +61,7 @@ h2 {
 }
 
 #left-column h2 {
+  font-size: 1.2em;
   margin: 2rem 0 0.5rem;
 }
 #left-column .section {
@@ -70,13 +71,9 @@ h2 {
   color: white;
 }
 
-#left-column h2 {
-  font-size: 1.2em;
-}
-
 .portrait-cont {
-  width: 9rem;
-  height: 9rem;
+  width: 12rem;
+  height: 12rem;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
@@ -125,14 +122,26 @@ h2 {
     font-size: 0.8rem;
 }
 
+#contact .indent {
+    padding-left: 1.2em; 
+}
+
 /* COMPÉTENCES */
-.skills {
+.skills-list {
   list-style-type: none;
   padding: 0;
   font-size: 0.9rem;
   letter-spacing: 1px;
-  margin: 0 0 1rem;
+  /* margin: 0 0 1rem; */
 }
+
+.skill-indent {
+  padding-left: 1.8em; 
+}
+
+.skills-title {
+  font-weight: bold;
+} 
 
 .infos {
   columns: 2;
@@ -147,12 +156,23 @@ h2 {
   padding: 45px;
 }
 
-#right-column h2 {
-  margin: 0  0 1rem;
+#h1-separateur {
+  border-top: 4px solid #000; 
+  margin-top: 0;
 }
 
-#formations, #others-experiences {
-  margin-top: 40px;
+#profil {
+  margin-top: 10px;
+}
+
+section {
+  padding-bottom: 10px;
+}
+
+#right-column h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5rem;
+  /* margin: 0  0 1rem; */
 }
 
 .technical-skills {
@@ -211,7 +231,7 @@ h2 {
 @media print {
   .cv-container {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 245px 1fr;
     grid-template-areas: 
       "left-column content";
     width: 100vw;
