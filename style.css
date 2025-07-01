@@ -47,10 +47,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.icon {
-  margin-right: 0.5rem;
-}
-
 .section {
   margin-bottom: 1.5rem;
 }
@@ -59,16 +55,16 @@ h2 {
 #left-column {
   grid-area: left-column;
   min-height: 100vh;
-  padding: 40px;
+  padding: 30px;
   background-color: #4472c4;
   color: white;
 }
 
 #left-column h2 {
-  margin: 2rem 0 0.5rem;
+  margin: 1rem 0 0.5rem;
 }
 #left-column .section {
-  margin-top: 3vh;
+  margin-top: 2vh;
 }
 #left-column a {
   color: white;
@@ -79,21 +75,13 @@ h2 {
 }
 
 .portrait-cont {
-  width: 9rem;
-  height: 9rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-} 
-
-@media only screen and (max-width: 56.25em) {
-  .portrait-cont {
-      width: 12rem;
-      height: 12rem;
-      border: 4px solid #ccc;
-  }
+  border: 4px solid #ccc;
 }
 
 .portrait {
@@ -108,26 +96,7 @@ h2 {
 }
 
 #job-title{
-  font-size: 1.4em;
-}
-
-#profil p {
-  font-size: 1rem;
-}
-
-/* CONTACT */
-#contact ul {
-  text-align: left;
-  padding-left: 0;
-}
-
-#contact li {
-  list-style-type: none;
-}
-
-.icons {
-  width: 15px;
-  height: 15px;
+  font-size: 1.6em;
 }
 
 /* COMPÉTENCES */
@@ -145,15 +114,33 @@ h2 {
   padding: 0;
 }
 
+/* CONTACT */
+#contact ul {
+  text-align: left;
+  padding-left: 0;
+}
+
+#contact li {
+  list-style-type: none;
+}
+
+.indent {
+  padding-left: 1.2em;
+}
+
 /* RIGHT COLUMN */
 /* CONTENT */
 .content {
   grid-area: content;
-  padding: 45px;
+  padding: 30px;
 }
 
 #right-column h2 {
   margin: 0  0 1rem;
+}
+
+#projets {
+  margin-top: 10px;
 }
 
 #formations, #others-experiences {
@@ -174,9 +161,15 @@ h2 {
 
 /* SVG */
 
+.icon {
+  margin-right: 0.5rem;
+}
+
 .icons {
   position: relative;
   top:5px;
+  width: 15px;
+  height: 15px;
   max-width: 20px;
   max-height: 20px;
 }
@@ -202,22 +195,26 @@ h2 {
     margin: 3vw auto;
     box-shadow: 0 10px 20px 0 #777;
   }
+  .portrait-cont {
+  border: 1px solid #ccc;
+} 
 } 
 
 @media print {
   .cv-container {
     display: grid;
-    grid-template-columns: 250px 1fr;
+    grid-template-columns: 280px 1fr;
     grid-template-areas: 
       "left-column content";
     width: 100vw;
     margin: 0;
   }
   #left-column {
-    padding: 20px;
+    padding: 17px;
   }
-  /* CONTACT */
-  #contact ul {
-    font-size: 0.8rem;
-  }
+  .portrait-cont {
+  width: 12rem;
+  height: 12rem;
+  border: 1px solid #ccc;
+} 
 }
