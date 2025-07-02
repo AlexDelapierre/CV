@@ -33,7 +33,11 @@
           />
         </div>
 
-        <div id="contact" class="section">
+        <div id="name-div">
+          <p>ALEXANDRE DELAPIERRE</p>
+        </div>
+
+        <section id="contact">
           <h2>Contact</h2>
           <ul>
             <li id="mail">
@@ -93,7 +97,7 @@
               </a>
             </li> -->
           </ul>
-        </div>
+        </section>
         
         <!-- <div class="section">
           <h2>COMPÉTENCES</h2>
@@ -129,7 +133,7 @@
           </ul>
         </div> -->
         
-        <div class="section">
+        <section>
           <h2>COMPÉTENCES</h2>
           <ul class="skills-list">
             <li class="skills-title">🔧 <strong>Langages & frameworks</strong></li>
@@ -140,8 +144,8 @@
           <ul class="skills-list">
             <li class="skills-title">🗄 <strong>Bases de données</strong></li>
             <li class="skill-indent">SQL (MySQL, MariaDB)</li>
-            <li class="skill-indent">ORM Doctrine</li>
             <li class="skill-indent">MongoDB, Mongoose</li>
+            <li class="skill-indent">ORM Doctrine</li>
           </ul>
 
           <ul class="skills-list">
@@ -155,9 +159,9 @@
             <li class="skill-indent">WordPress</li>
             <li class="skill-indent">Git, GitHub</li>
           </ul>
-        </div>
+        </section>
 
-        <div class="section">
+        <section>
           <h2>Soft Skills</h2>
           <ul class="skills-list">
             <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Esprit d’équipe</strong></li>
@@ -169,16 +173,16 @@
             <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Créativité</strong></li>
             <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Patience</strong></li> -->
           </ul>
-        </div>      
+        </section>      
 
-        <div class="section">
+        <section>
           <h2>Langues</h2>
           <p>
             Français, langue maternelle
             <br />
             Anglais professionnel
           </p>
-        </div>        
+        </section>        
       </div>
 
       <!-- Right column -->
@@ -186,18 +190,14 @@
         <!-- Content -->
         <main class="content">
 
-          <div id="h1-div">
-            <h1>ALEXANDRE DELAPIERRE</h1>
-            <!-- <p id="job-title">Développeur web -->
-              <!-- <p id="job-title">Développeur informatique -->
-              <p id="job-title">Développeur Web Full-Stack
-              <!-- <p id="job-title">Développeur Full-Stack -->
-              <!-- <p id="job-title">Développeur PHP/Symfony -->
-              <!-- <br>
-              en alternance -->
-            </p> 
-          </div>
-
+          <h1>Développeur Web Full-Stack</h1>
+          <!-- <p id="job-title">Développeur web -->
+          <!-- <p id="job-title">Développeur informatique -->
+          <!-- <p id="job-title">Développeur Full-Stack -->
+          <!-- <p id="job-title">Développeur PHP/Symfony -->
+          <!-- <br>
+          en alternance -->
+        
           <hr id="h1-separateur">
 
           <section id="profil">
@@ -212,10 +212,14 @@
             </p> -->
 
             <!-- CV Polyvalent raccourci -->
-            <p> 
-            Diplômé d’un Bac+2 en développement web, j’étudie la programmation depuis plus de 3 ans avec une implication constante. Bien que je n’aie pas encore d’expérience professionnelle dans le domaine, j’ai beaucoup appris au travers de mes projets personnels et développé de solides compétences. Rigoureux, organisé et impliqué, je suis prêt à m’investir pleinement au sein d’une équipe et à continuer de monter en compétences.</p> 
             <!-- <p> 
               Développeur Web Full-Stack junior, diplômé Bac+2, je suis passionné par les défis techniques et la conception de solutions performantes. Curieux et rigoureux, je souhaite contribuer à des projets stimulants au sein d’une équipe dynamique. 
+            </p>  -->
+            <p>
+              Diplômé d’un Bac+2 en développement web, j’étudie la programmation depuis plus de 3 ans avec une implication constante. Bien que je n’aie pas encore d’expérience professionnelle dans le domaine, j’ai beaucoup appris au travers de mes projets et développé de solides compétences. Rigoureux, organisé et impliqué, je suis prêt à m’investir pleinement au sein d’une équipe, à contribuer activement aux projets et à monter rapidement en compétences. 
+            </p> 
+            <!-- <p>
+              Diplômé d’un Bac+2 en développement web, j’étudie la programmation depuis plus de 3 ans avec une implication constante. Bien que je n’aie pas encore d’expérience professionnelle dans le domaine, j’ai beaucoup appris au travers de mes projets et développé de solides compétences. Rigoureux, organisé et impliqué, je suis prêt à m’investir pleinement au sein d’une équipe et à monter rapidement en compétences.            
             </p>  -->
 
             <!-- Emploi 2 -->
@@ -280,7 +284,7 @@
               <!-- Expérience <span class="text-blue">en développement</span> -->
             </h2>
 
-            <div class="section">
+            <div class="projets">
               <strong>Site web pour restaurant en PHP/Symfony et JavaScript</strong>
               <a href="https://le-quai-antique.alexdelapierre.fr/" target="_blank" class="icons">
                 <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
@@ -295,13 +299,13 @@
               formulaire de réservation validé en AJAX. Le tout en responsive design et mobile first. -->
               <!-- Création d’un site vitrine pour un restaurant avec une interface d’administration dédiée à la gestion des menus et des réservations. Intégration d’un système d’authentification sécurisé et d’un formulaire de réservation dynamique avec validation asynchrone via AJAX. Le site est responsive et optimisé mobile-first. -->
               <!-- Développement d’un site de restaurant administrable avec back-office sécurisé pour gérer les menus et les réservations. Création d’un compte admin en CLI et système d’authentification avec création de comptes utilisateurs. Formulaire de réservation dynamique avec gestion des plages horaires et validation en AJAX. Données de test injectées via DataFixtures (menus, créneaux, horaires). Architecture MVC avec Twig, routing Symfony et base de données gérée via Doctrine ORM. Design responsive mobile-first. -->         
-              <ul class="technical-skills">
+              <ul class="">
                 <li>Back-office sécurisé pour gérer les menus et les réservations.</li>
                 <!-- <li>Système d’authentification avec création de comptes utilisateurs.</li> -->
                 <li>Implémentation d'un système CRUD</li>
                 <li>Formulaire de réservation dynamique avec validation en AJAX.</li>
               </ul>  
-              🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap
+              <div class="projets-skills">🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</div>
               <!-- 🛠 Technos : PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap -->
 
               <!-- <ul class="technical-skills">
@@ -312,7 +316,7 @@
               </ul> -->            
             </div>
 
-            <div class="section">
+            <div class="projets">
               <strong>Application web de recettes de cuisine en PHP</strong>
               <a href="https://cuisinea.alexdelapierre.fr/" target="_blank" class="icons">
                 <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
@@ -332,7 +336,7 @@
               <li>Implémentation d'un système CRUD pour la gestion des recettes</li>
               <li>Design responsive avec Bootstrap</li>
               </ul>
-              🛠 PHP, MySQL, HTML5, CSS3, Bootstrap
+              <div class="projets-skills">🛠 PHP, MySQL, HTML5, CSS3, Bootstrap</div>
               <!-- 🛠 Technos : PHP, MySQL, HTML5, CSS3, Bootstrap -->
               
               <!-- <ul class="technical-skills">
@@ -342,7 +346,7 @@
               </ul> -->
             </div>
 
-            <div class="section">
+            <div class="projets">
               <strong>Site e-commerce en PHP/Symfony</strong>
               <a href="https://site-e-commerce.alexdelapierre.fr/" target="_blank" class="icons">
                 <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
@@ -363,7 +367,7 @@
                 <li>Gestion des produits (CRUD, catégories, images, ...)</li>
                 <li>Panier, traitement des commandes et espace utilisateur.</li>
               </ul>
-              🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap
+              <div class="projets-skills">🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</div>
               <!-- 🛠 Technos : PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap -->
               
               <!-- <ul class="technical-skills">
@@ -374,7 +378,7 @@
               </ul> -->
             </div>
 
-            <div class="section">
+            <div class="projets">
               <strong>Site de BD/Manga en PHP et JavaScript</strong>    
               <a href="https://bookeo.alexdelapierre.fr/" target="_blank" class="icons">
                 <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
@@ -395,7 +399,7 @@
                 <li>Gestion des articles (ajout, modification, suppression)</li>
                 <li>Carrousel dynamique en JavaScript</li>
               </ul>
-              🛠 PHP, MySQL, JavaScript, HTML5, CSS3, Bootstrap
+              <div class="projets-skills">🛠 PHP, MySQL, JavaScript, HTML5, CSS3, Bootstrap</div>
               <!-- 🛠 Technos : PHP, MySQL, JavaScript, HTML5, CSS3, Bootstrap -->
               
               <!-- <ul class="technical-skills">
@@ -413,7 +417,7 @@
             <!-- <h2>Études <span class="text-blue">& Diplômes</span></h2> -->
             <h2><span class="text-blue">Formation</span></h2>
 
-            <!-- <div class="section">
+            <!-- <div class="formation">
               <p>
                 <strong>Bachelor Développeur web</strong>
                 <a href="https://www.mydigitalschool.com/bachelor-developpeur-digital-web" target="_blank" class="icons">
@@ -428,23 +432,24 @@
               </p>
             </div> -->
 
-            <div class="section">
+            <div class="formation">
               <p>
-                <strong>Graduate Développeur web full stack</strong>
-                <a href="https://www.studi.com/fr/formation/developpement/graduate-developpeur-web-full-stack" target="_blank" class="icons">
+                <strong>Graduate Développeur web full stack - Studi</strong>
+                <!-- <a href="https://www.studi.com/fr/formation/developpement/graduate-developpeur-web-full-stack" target="_blank" class="icons">
                   <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-                </a>
+                </a> -->
                 <em class="date">01/2022 <i class="fas fa-long-arrow-alt-right"></i> 10/2023</em>
                 <br>
-                Bac+2 (Titre RNCP Niveau 5) - 
-                <a href="https://www.francecompetences.fr/recherche/rncp/37674/" target="_blank">Développeur web et web mobile</a>. 
+                <strong>Bac+2 <span class="subtext">(Titre RNCP Niveau 5)</span> - Développeur web et web mobile</strong> 
+                <a href="https://www.francecompetences.fr/recherche/rncp/37674/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>
                 <br>
                 <!-- Formation avec l’école Studi de 1 an et 9 mois axée sur le développement front-end et back-end d’applications web, incluant le maquettage (Figma, AdobeXD), la création d’interfaces utilisateur dynamiques, la conceptualisation (UML, Merise) et l’intégration de bases de données relationnelles, le développement de composants d’accès aux données (requêtes SQL ou ORM), de composants métier côté serveur, et de plateformes d’administration. -->
-                Formation avec l'école Studi axée sur le développement front-end et back-end d'applications web.                <!-- (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
+                Formation de un an et neuf mois avec l’école Studi, axée sur le développement front-end et back-end d’applications web.                <!-- (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
                 <br>
                 <!-- 🛠 HTML, CSS, Bootstrap, JavaScript, SQL, PHP, Symfony, WordPress, React. -->
                 <!-- 🛠 Technos : HTML, CSS, Bootstrap, JavaScript, SQL, PHP, Symfony, WordPress, React. -->
-
               </p>
             </div>
           </section>

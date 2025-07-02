@@ -11,28 +11,38 @@ body {
   line-height: 1.5;
 }
 
-a {
-  text-decoration: none;
+.cv-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas: 
+    "left-column content";
+  width: 70vw;
+  margin: 3vw auto;
+  box-shadow: 0 10px 20px 0 #777;
 }
 
-a:hover {
-  text-decoration: underline;
-}
-
-p {
-  margin: 0 0 1rem;
+section {
+  margin-bottom: 1.5rem;
 }
 
 h1 {
-  margin: 0 0 1rem;
+  margin: 0.7rem 0 1rem;
   font-size: 1.8rem;
-  margin-bottom: 0.5rem;
   line-height: 2rem;
 }
 
 h2 {
   letter-spacing: 1px;
   text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .text-blue {
@@ -47,38 +57,27 @@ h2 {
   text-transform: uppercase;
 }
 
-.section {
-  margin-bottom: 1rem;
+.subtext{
+  font-size: 0.9rem;
 }
 
 /* LEFT COLUMN */
 #left-column {
   grid-area: left-column;
   min-height: 100vh;
-  padding: 40px;
+  padding: 20px;
   background-color: #4472c4;
   color: white;
 }
 
-#left-column h2 {
-  font-size: 1.2em;
-  margin: 2rem 0 0.5rem;
-}
-#left-column .section {
-  margin-top: 3vh;
-}
-#left-column a {
-  color: white;
-}
-
 .portrait-cont {
-  width: 12rem;
-  height: 12rem;
+  width: 14rem;
+  height: 14rem;
   border-radius: 50%;
   overflow: hidden;
   margin: auto;
   margin-bottom: 20px;
-  border: 4px solid #ccc;
+  border: 1px solid #ccc;
 } 
 
 .portrait {
@@ -88,16 +87,14 @@ h2 {
   display: block
 } 
 
-#h1-div{
-  /* text-align: center; */
+#name-div p {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
 }
 
-#job-title{
-  font-size: 1.4em;
-}
-
-#profil p {
-  font-size: 1rem;
+#left-column a {
+  color: white;
 }
 
 /* CONTACT */
@@ -110,35 +107,22 @@ h2 {
   list-style-type: none;
 }
 
-#contact #mail {
-    font-size: 0.8rem;
-}
-
 #contact .indent {
-    padding-left: 1.2em; 
+  padding-left: 1.2em; 
 }
 
 /* COMPÉTENCES */
 .skills-list {
   list-style-type: none;
   padding: 0;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  /* margin: 0 0 1rem; */
-}
-
-.skill-indent {
-  padding-left: 1.8em; 
 }
 
 .skills-title {
   font-weight: bold;
 } 
 
-.infos {
-  columns: 2;
-  list-style-type: none;
-  padding: 0;
+.skill-indent {
+  padding-left: 1.8em; 
 }
 
 /* RIGHT COLUMN */
@@ -148,35 +132,33 @@ h2 {
   padding: 20px;
 }
 
+#job-title{
+  font-size: 1.4em;
+}
+
 #h1-separateur {
   border-top: 4px solid #000; 
   margin-top: 0;
 }
 
 #profil {
-  margin-top: 10px;
+  margin-top: 17px;
 }
 
-section {
-  padding-bottom: 10px;
+.projets {
+  margin-bottom: 1rem;
 }
 
-#right-column h2 {
-  font-size: 1.2em;
-  margin-bottom: 0.5rem;
-  /* margin: 0  0 1rem; */
+.projets-skills{
+  margin-left: 19px;
 }
 
 .technical-skills {
   list-style-type: circle;
 }
 
-.technical-skills li{
-  font-size: 0.9rem;
-}
-
 .date{
-  margin-left: 1rem;
+  margin-left: 0.7rem;
 }
 
 /* SVG */
@@ -188,13 +170,15 @@ section {
 .icons {
   position: relative;
   top:5px;
+  width: 15px;
+  height: 15px;
   max-width: 20px;
   max-height: 20px;
 }
 
-.icons {
-  width: 15px;
-  height: 15px;
+#left-column .icons {
+  top:2px;
+  margin-right: 1px;
 }
 
 .Github_Icon {
@@ -207,39 +191,24 @@ section {
   height: 20px; 
 }
 
-/* média queries desktop */
- @media screen and (min-width: 1000px) {
-  .cv-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-      "left-column content";
-    width: 70vw;
-    margin: 3vw auto;
-    box-shadow: 0 10px 20px 0 #777;
-  }
-  .portrait-cont {
-      /* width: 12rem;
-      height: 12rem; */
-      border: 1px solid #ccc;
-  }
-} 
-
 @media print {
   .cv-container {
     display: grid;
-    grid-template-columns: 245px 1fr;
+    grid-template-columns: 240px 1fr;
     grid-template-areas: 
       "left-column content";
     width: 100vw;
     margin: 0;
   }
   #left-column {
-    padding: 20px;
+    padding: 17px;
   }
   .portrait-cont {
-      /* width: 12rem;
-      height: 12rem; */
+      width: 11rem;
+      height: 11rem;
       border: 1px solid #ccc;
+  }
+  #contact #mail {
+  font-size: 0.8rem;
   }
 }
