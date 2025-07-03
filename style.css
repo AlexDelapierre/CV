@@ -8,7 +8,29 @@ body {
   font-family: Roboto;
   font-weight: 300;
   font-size: 1rem;
-  line-height: 1.5;
+  /* line-height: 1.5; */
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h1 {
+  /* font-size: 1.8rem;
+  line-height: 2rem; */
+  /* margin-top: 1rem; */
+  margin-bottom: 1rem;
+}
+
+#h1-separateur {
+  border-top: 4px solid #000;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  /* letter-spacing: 1px; */
+  text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -20,19 +42,7 @@ a:hover {
 }
 
 p {
-  margin: 0 0 1rem;
-}
-
-h1 {
-  margin: 0 0 1rem;
-  font-size: 1.8rem;
-  margin-bottom: 0.5rem;
-  line-height: 2rem;
-}
-
-h2 {
-  letter-spacing: 1px;
-  text-transform: uppercase;
+  /* margin: 0 0 1rem; */
 }
 
 .text-blue {
@@ -47,8 +57,8 @@ h2 {
   text-transform: uppercase;
 }
 
-.section {
-  margin-bottom: 1.5rem;
+.subtext{
+  font-size: 0.9rem;
 }
 
 /* LEFT COLUMN */
@@ -58,20 +68,6 @@ h2 {
   padding: 30px;
   background-color: #4472c4;
   color: white;
-}
-
-#left-column h2 {
-  margin: 1rem 0 0.5rem;
-}
-#left-column .section {
-  margin-top: 2vh;
-}
-#left-column a {
-  color: white;
-}
-
-#left-column h2 {
-  font-size: 1.2em;
 }
 
 .portrait-cont {
@@ -89,30 +85,48 @@ h2 {
   height: 100%;
   object-fit: cover;
   display: block
-} 
-
-#h1-div{
-  text-align: center;
 }
 
-#job-title{
-  font-size: 1.6em;
+.profile-info{
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.name{
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 2rem;
+}
+
+#left-column a {
+  color: white;
 }
 
 /* COMPÉTENCES */
 .skills {
   list-style-type: none;
   padding: 0;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  margin: 0 0 1rem;
 }
 
-.infos {
-  columns: 2;
+.skills-list {
   list-style-type: none;
   padding: 0;
 }
+
+.skills-title {
+  font-weight: bold;
+} 
+
+.skill-indent {
+  padding-left: 1.8em; 
+}
+
+/* .infos {
+  columns: 2;
+  list-style-type: none;
+  padding: 0;
+} */
 
 /* CONTACT */
 #contact ul {
@@ -124,39 +138,28 @@ h2 {
   list-style-type: none;
 }
 
-.indent {
+#contact .indent {
   padding-left: 1.2em;
 }
 
 /* RIGHT COLUMN */
-/* CONTENT */
-.content {
-  grid-area: content;
+#right-column {
+  grid-area: right-column;
   padding: 30px;
 }
 
-#right-column h2 {
-  margin: 0  0 1rem;
+.section {
+  margin-bottom: 1rem;
 }
 
-#projets {
-  margin-top: 10px;
-}
-
-#formations, #others-experiences {
-  margin-top: 40px;
+.header-row {
+  display: flex;
+  align-items: center;        
+  gap: 20px;                  
 }
 
 .technical-skills {
   list-style-type: circle;
-}
-
-.technical-skills li{
-  font-size: 0.9rem;
-}
-
-.date{
-  margin-left: 1rem;
 }
 
 /* SVG */
@@ -175,37 +178,37 @@ h2 {
 }
 
 .Github_Icon {
-  width: 20px; 
-  height: 20px; 
+  width: 20px;
+  height: 20px;
 }
 
 .Link_Icon {
-  width: 20px; 
-  height: 20px; 
+  width: 20px;
+  height: 20px;
 }
 
 /* média queries desktop */
  @media screen and (min-width: 1000px) {
-  .cv-container {
+  #cvContainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-areas: 
-      "left-column content";
+    grid-template-areas:
+      "left-column right-column";
     width: 70vw;
     margin: 3vw auto;
     box-shadow: 0 10px 20px 0 #777;
   }
   .portrait-cont {
   border: 1px solid #ccc;
-} 
-} 
+  }
+}
 
 @media print {
-  .cv-container {
+  #cvContainer {
     display: grid;
     grid-template-columns: 280px 1fr;
-    grid-template-areas: 
-      "left-column content";
+    grid-template-areas:
+      "left-column right-column";
     width: 100vw;
     margin: 0;
   }
@@ -216,5 +219,5 @@ h2 {
   width: 12rem;
   height: 12rem;
   border: 1px solid #ccc;
-} 
+  }
 }
