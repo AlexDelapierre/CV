@@ -7,8 +7,8 @@
 body {
   font-family: Roboto;
   font-weight: 300;
-  font-size: 1rem;
-  /* line-height: 1.5; */
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 
 section {
@@ -112,10 +112,12 @@ p {
 .skills-list {
   list-style-type: none;
   padding: 0;
+  margin-bottom: 0.2rem;
 }
 
 .skills-title {
   font-weight: bold;
+  margin-bottom: 0.2rem;
 } 
 
 .skill-indent {
@@ -152,11 +154,12 @@ p {
   margin-bottom: 1rem;
 }
 
-.header-row {
-  display: flex;
-  align-items: center;        
-  gap: 20px;                  
+.date {
+  margin-left: 1rem;
+  font-style: italic;
+  font-size: 0.8em;
 }
+
 
 .technical-skills {
   list-style-type: circle;
@@ -178,17 +181,21 @@ p {
 }
 
 .Github_Icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 .Link_Icon {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
 }
 
 /* média queries desktop */
  @media screen and (min-width: 1000px) {
+  body {
+  font-size: 1rem;
+  line-height: 1.2;
+  }
   #cvContainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -201,9 +208,22 @@ p {
   .portrait-cont {
   border: 1px solid #ccc;
   }
+  .Github_Icon {
+  width: 20px;
+  height: 20px;
+}
+
+.Link_Icon {
+  width: 20px;
+  height: 20px;
+}
 }
 
 @media print {
+  body {
+  font-size: 1rem;
+  line-height: 1.2;
+  }
   #cvContainer {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -216,8 +236,17 @@ p {
     padding: 17px;
   }
   .portrait-cont {
-  width: 12rem;
-  height: 12rem;
+  width: 11rem;
+  height: 11rem;
   border: 1px solid #ccc;
   }
+  .Github_Icon {
+  width: 20px;
+  height: 20px;
+}
+
+.Link_Icon {
+  width: 20px;
+  height: 20px;
+}
 }
