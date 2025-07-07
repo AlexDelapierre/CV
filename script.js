@@ -43,7 +43,7 @@ window.addEventListener('beforeprint', () => {
 
 // Cacher plusieurs blocs avant impression
 window.addEventListener('beforeprint', () => {
-  const idsToHide = ['languages', 'projets', 'formations'];
+  const idsToHide = ['languages', 'projets', 'formations', 'soft-skills'];
   const printBlocks = document.querySelectorAll('.print-block');
 
   idsToHide.forEach(id => {
@@ -55,7 +55,7 @@ window.addEventListener('beforeprint', () => {
 
 // Réafficher les blocs après impression
 window.addEventListener('afterprint', () => {
-  const idsToHide = ['languages', 'projets', 'formations'];
+  const idsToHide = ['languages', 'projets', 'formations', 'soft-skills'];
   const printBlocks = document.querySelectorAll('.print-block');
 
   idsToHide.forEach(id => {
