@@ -22,11 +22,6 @@ h1 {
   margin-bottom: 1rem;
 }
 
-#h1-separateur {
-  border-top: 4px solid #000;
-  margin-bottom: 1rem;
-}
-
 h2 {
   /* letter-spacing: 1px; */
   text-transform: uppercase;
@@ -34,7 +29,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 a {
@@ -156,13 +151,13 @@ ul {
   padding: 30px;
 }
 
-.section {
+#h1-separateur {
+  border-top: 4px solid #000;
   margin-bottom: 1rem;
 }
 
-.date {
-  font-style: italic;
-  font-size: 0.8em;
+.section {
+  margin-bottom: 1.5rem;
 }
 
 .technical-skills {
@@ -186,6 +181,11 @@ ul {
   color: black;
   margin-right: 0.4em; /* ajuste ici l'espace */
   font-weight: bold;
+}
+
+.date {
+  font-style: italic;
+  font-size: 0.8em;
 }
 
 /* SVG */
@@ -220,9 +220,6 @@ ul {
 
 /* média queries desktop */
  @media screen and (min-width: 1000px) {
-  body {
-  /* line-height: 1.2; */
-  }
   #cvContainer {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -234,6 +231,9 @@ ul {
   }
   .portrait-cont {
   border: 1px solid #ccc;
+  }
+  .section {
+  margin-bottom: 0.6rem;
   }
   .date {
   margin-left: 1rem;
@@ -247,7 +247,7 @@ ul {
   }
   #cvContainer {
     display: grid;
-    grid-template-columns: 240px 1fr;
+    grid-template-columns: 250px 1fr;
     grid-template-areas:
       "left-column right-column";
     width: 100vw;
@@ -256,24 +256,30 @@ ul {
   #left-column {
     padding: 17px;
   }
+  #right-column {
+  padding: 20px;
+  }
+  .section {
+  margin-bottom: 0.6rem;
+  }
+  #left-column section {
+  margin-bottom: 1rem;
+  }
   .portrait-cont {
   width: 11rem;
   height: 11rem;
   border: 1px solid #ccc;
   }
-  #others-experiences, #hr-others-experiences {
+  /* #others-experiences, #hr-others-experiences {
     display: none !important;
-  }
-  #contact #mail {
-  font-size: 0.8rem;
-  }
+  } */
   h2 {
   margin-bottom: 0.3rem;
   }
-  #left-column h2 {
-  margin-bottom: 0.5rem;
-  }
   .date {
   margin-left: 1rem;
+  }
+   #contact #mail {
+  font-size: 0.8rem;
   }
 }
