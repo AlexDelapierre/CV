@@ -16,14 +16,10 @@ section {
 }
 
 h1 {
-  /* font-size: 1.8rem;
-  line-height: 2rem; */
-  /* margin-top: 1rem; */
   margin-bottom: 1rem;
 }
 
 h2 {
-  /* letter-spacing: 1px; */
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -127,7 +123,6 @@ ul {
 .skills-list {
   list-style-type: none;
   padding: 0;
-  /* margin-bottom: 0.2rem; */
 }
 
 .skills-title {
@@ -138,12 +133,6 @@ ul {
 .skill-indent {
   padding-left: 1.8em; 
 }
-
-/* .infos {
-  columns: 2;
-  list-style-type: none;
-  padding: 0;
-} */
 
 /* RIGHT COLUMN */
 #right-column {
@@ -160,17 +149,6 @@ ul {
   margin-bottom: 1.5rem;
 }
 
-.technical-skills {
-  /* list-style-type: circle; */
-}
-
-.projets-skills{
-  /* margin-left: 19px; */
-  /* margin: 0; */
-  /* padding-left: 0; */
-  /* list-style-position: inside;  */
-}
-
 #right-column ul {
   list-style: none;
   padding-left: 0;
@@ -179,7 +157,7 @@ ul {
 #right-column ul li::before {
   content: '•';
   color: black;
-  margin-right: 0.4em; /* ajuste ici l'espace */
+  margin-right: 0.4em; 
   font-weight: bold;
 }
 
@@ -273,9 +251,6 @@ ul {
   height: 11rem;
   border: 1px solid #ccc;
   }
-  /* #others-experiences, #hr-others-experiences {
-    display: none !important;
-  } */
   h2 {
   margin-bottom: 0.3rem;
   }
