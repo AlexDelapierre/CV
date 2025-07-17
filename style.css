@@ -167,7 +167,8 @@ ul {
 }
 
 #h1-separateur {
-  border-top: 4px solid #000;
+  border-top: 3px solid #000;
+  /* border-top: 4px solid #4472c4; */
   margin-bottom: 1rem;
 }
 
@@ -260,6 +261,9 @@ ul {
   .date {
   margin-left: 1rem;
   }
+  h1 {
+      color: #4472c4;
+  }
 }
 
 @media print {
@@ -292,9 +296,9 @@ ul {
   height: 11rem;
   border: 1px solid #ccc;
   }
-  /* #others-experiences, #hr-others-experiences {
-    display: none !important;
-  } */
+  h1 {
+      color: #4472c4;
+  }
   h2 {
   margin-bottom: 0.3rem;
   }
