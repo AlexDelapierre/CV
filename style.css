@@ -127,7 +127,8 @@ ul {
 .skills-list {
   list-style-type: none;
   padding: 0;
-  /* margin-bottom: 0.2rem; */
+  margin-left: 0.4em;
+  margin-bottom: 0.2rem;
 }
 
 .skills-title {
@@ -135,9 +136,23 @@ ul {
   margin-bottom: 0.2rem;
 } 
 
-.skill-indent {
-  padding-left: 1.8em; 
-}
+/* .skill-indent {
+  padding-left: 1.6em; 
+} */
+
+.skills-list li {
+  position: relative;
+  padding-left: 1.2em; /* espace entre la puce et le texte */
+} 
+
+.skills-list li::before {
+  content: "•"; 
+  position: absolute;
+  left: 0;
+  color: #ffffff; 
+  font-size: 1em;
+  line-height: 1;
+}  
 
 /* .infos {
   columns: 2;
@@ -158,6 +173,10 @@ ul {
 
 .section {
   margin-bottom: 1.5rem;
+}
+
+.section em  {
+  margin-left: -0.3em;
 }
 
 .technical-skills {
