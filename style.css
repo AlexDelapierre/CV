@@ -16,14 +16,10 @@ section {
 }
 
 h1 {
-  /* font-size: 1.8rem;
-  line-height: 2rem; */
-  /* margin-top: 1rem; */
   margin-bottom: 1rem;
 }
 
 h2 {
-  /* letter-spacing: 1px; */
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -136,10 +132,6 @@ ul {
   margin-bottom: 0.2rem;
 } 
 
-/* .skill-indent {
-  padding-left: 1.6em; 
-} */
-
 .skills-list li {
   position: relative;
   padding-left: 1.2em; /* espace entre la puce et le texte */
@@ -154,12 +146,6 @@ ul {
   line-height: 1;
 }  
 
-/* .infos {
-  columns: 2;
-  list-style-type: none;
-  padding: 0;
-} */
-
 /* RIGHT COLUMN */
 #right-column {
   grid-area: right-column;
@@ -168,7 +154,6 @@ ul {
 
 #h1-separateur {
   border-top: 3px solid #000;
-  /* border-top: 4px solid #4472c4; */
   margin-bottom: 1rem;
 }
 
@@ -180,15 +165,8 @@ ul {
   margin-left: -0.3em;
 }
 
-.technical-skills {
-  /* list-style-type: circle; */
-}
-
 .projets-skills{
   margin-top: 1px;
-  /* margin: 0; */
-  /* padding-left: 0; */
-  /* list-style-position: inside;  */
 }
 
 #right-column ul {
@@ -199,7 +177,7 @@ ul {
 #right-column ul li::before {
   content: '•';
   color: black;
-  margin-right: 0.4em; /* ajuste ici l'espace */
+  margin-right: 0.4em; 
   font-weight: bold;
 }
 
