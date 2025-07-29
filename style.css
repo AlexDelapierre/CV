@@ -185,7 +185,7 @@ ul {
 }
 
 .projets-skills{
-  /* margin-left: 19px; */
+  margin-top: 1px;
   /* margin: 0; */
   /* padding-left: 0; */
   /* list-style-position: inside;  */
@@ -289,7 +289,7 @@ ul {
   margin-bottom: 0.6rem;
   }
   #left-column section {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1.2rem;
   }
   .portrait-cont {
   width: 11rem;
