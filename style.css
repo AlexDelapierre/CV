@@ -174,69 +174,28 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* border-bottom: 2px solid #4472c4; */
 }
-
-/* --- Styles pour le Header et le Paragraphe (facultatif) --- */
-
-/* Assurez-vous que l'espace sous le paragraphe est gérable */
 header p {
     margin-bottom: 10px; /* Ajoute un peu d'espace avant les liens */
 }
-
 .lien-sociaux-container {
   display: flex;
 }
-
-/* --- Styles pour les Liens Sociaux (Le plus important) --- */
-
-/* 1. Cache la balise NAV si vous ne voulez qu'une ligne de liens */
-/* Si vous voulez que NAV serve de conteneur, utilisez les styles ci-dessous */
-
-/* 2. Style de la liste (<ul>) */
 .lien-sociaux {
-  /* 1. Cache la puce */
   list-style-type: none; 
-  list-style: none; /* Supprime les puces par défaut */
-  padding: 0; /* Supprime le padding par défaut de la liste */
-  margin: 0; /* Supprime la marge par défaut */
-  
-  /* Active Flexbox pour aligner tous les éléments LI sur une seule ligne */
+  padding: 0; 
+  margin: 0; 
   display: flex;
-  /* Ajoute un petit espace entre les LI pour que les liens ne se touchent pas */
   gap: 15px; 
-  
-  
-  
-  /* Optionnel : Centre les liens sous le paragraphe */
-  /* justify-content: center; */ 
 }
-
-
-/* 3. Style des éléments de liste (<li>) */
 .lien-sociaux li {
-    /* Si vous n'utilisez pas 'gap' sur l'UL, vous pouvez utiliser margin-right ici */
-    /* margin-right: 15px; */
     /* Assure que chaque lien est bien une boîte */
     display: inline-block; 
 }
-
-/* 4. Style des liens (<a>) */
 .lien-sociaux a {
-    text-decoration: none; /* Supprime le soulignement par défaut */
-    color: #4472c4; /* Ou toute autre couleur de lien standard */
-    font-weight: bold; /* Optionnel : rend les liens plus visibles */
-    
-    /* Optionnel : pour une meilleure accessibilité et visibilité au survol */
-    /* &:hover {
-        text-decoration: underline; 
-    } */
-}
-
-.infos {
-  columns: 2;
-  list-style-type: none;
-  padding: 0;
+    text-decoration: none; 
+    color: #4472c4; 
+    font-weight: bold;  
 }
 
 .content {
