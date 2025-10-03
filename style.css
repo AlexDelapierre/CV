@@ -160,26 +160,88 @@ ul {
   padding: 0;
 } */
 
-/* RIGHT COLUMN */
-#right-column {
+/* ----------------------------------------- RIGHT COLUMN --------------------------------------- */
+/* #right-column {
   grid-area: right-column;
   padding: 30px;
-}
+} */
 
 /* HEADER */
-.header {
+header {
   grid-area: header;
-  padding: 50px;
+  padding: 30px;
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* border-bottom: 2px solid #4472c4; */
+}
+
+/* --- Styles pour le Header et le Paragraphe (facultatif) --- */
+
+/* Assurez-vous que l'espace sous le paragraphe est gérable */
+header p {
+    margin-bottom: 10px; /* Ajoute un peu d'espace avant les liens */
+}
+
+.lien-sociaux-container {
+  display: flex;
+}
+
+/* --- Styles pour les Liens Sociaux (Le plus important) --- */
+
+/* 1. Cache la balise NAV si vous ne voulez qu'une ligne de liens */
+/* Si vous voulez que NAV serve de conteneur, utilisez les styles ci-dessous */
+
+/* 2. Style de la liste (<ul>) */
+.lien-sociaux {
+  /* 1. Cache la puce */
+  list-style-type: none; 
+  list-style: none; /* Supprime les puces par défaut */
+  padding: 0; /* Supprime le padding par défaut de la liste */
+  margin: 0; /* Supprime la marge par défaut */
+  
+  /* Active Flexbox pour aligner tous les éléments LI sur une seule ligne */
+  display: flex;
+  /* Ajoute un petit espace entre les LI pour que les liens ne se touchent pas */
+  gap: 15px; 
+  
+  
+  
+  /* Optionnel : Centre les liens sous le paragraphe */
+  /* justify-content: center; */ 
+}
+
+
+/* 3. Style des éléments de liste (<li>) */
+.lien-sociaux li {
+    /* Si vous n'utilisez pas 'gap' sur l'UL, vous pouvez utiliser margin-right ici */
+    /* margin-right: 15px; */
+    /* Assure que chaque lien est bien une boîte */
+    display: inline-block; 
+}
+
+/* 4. Style des liens (<a>) */
+.lien-sociaux a {
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    color: #4472c4; /* Ou toute autre couleur de lien standard */
+    font-weight: bold; /* Optionnel : rend les liens plus visibles */
+    
+    /* Optionnel : pour une meilleure accessibilité et visibilité au survol */
+    /* &:hover {
+        text-decoration: underline; 
+    } */
 }
 
 .infos {
   columns: 2;
   list-style-type: none;
   padding: 0;
+}
+
+.content {
+  grid-area: content;
+  padding: 10px 30px;
 }
 
 #h1-separateur {
@@ -191,14 +253,14 @@ ul {
 hr{
   border: none;            
   border-top: 2px solid #4472c4;
-  margin-bottom: 1px; 
+  margin-bottom: 10px; 
 }
 
-.section {
+article {
   margin-bottom: 1.7rem;
 }
 
-.section em  {
+article em  {
   margin-left: -0.3em;
 }
 
@@ -213,12 +275,12 @@ hr{
   /* list-style-position: inside;  */
 }
 
-#right-column ul {
+.content ul {
   list-style: none;
   padding-left: 0;
 }
 
-#right-column ul li::before {
+.content ul li::before {
   content: '•';
   color: black;
   margin-right: 0.4em; /* ajuste ici l'espace */
@@ -261,8 +323,8 @@ hr{
 }
 
 /* média queries desktop */
- @media screen and (min-width: 1000px) {
-  #cvContainer {
+@media screen and (min-width: 1000px) {
+  main {
     display: grid;
     grid-template-columns: 1fr 2fr;
     /* grid-template-areas:
@@ -277,7 +339,7 @@ hr{
   .portrait-cont {
   border: 1px solid #ccc;
   }
-  .section {
+  article {
   margin-bottom: 1rem;
   }
   #left-column section {
@@ -294,9 +356,9 @@ hr{
 @media print {
   body {
   font-size: 1rem;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   }
-  #cvContainer {
+  main {
     display: grid;
     grid-template-columns: 250px 1fr;
     grid-template-areas:
@@ -307,14 +369,24 @@ hr{
   #left-column {
     padding: 17px;
   }
-  #right-column {
+  /* #right-column {
   padding: 20px;
+  } */
+  header {
+    padding: 1rem;
   }
-  .section {
+  .content {
+    /* font-size: 0.9rem; */
+    padding: 1.4rem 1rem 1rem 1.5rem;
+  }
+  section {
+  margin-bottom: 1.4rem;
+} 
+  article {
   margin-bottom: 0.6rem;
   }
   #left-column section {
-  margin-bottom: 1.2rem;
+  margin-bottom: 2rem;
   }
   .portrait-cont {
   width: 11rem;

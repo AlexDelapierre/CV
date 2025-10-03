@@ -14,13 +14,20 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
+    /> -->
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" 
     /> 
   </head>
   <body>
-    <div id="cvContainer">
+    <main>
 
       <!-- Left column -->
       <div id="left-column">
@@ -44,7 +51,7 @@
           </div>
         </div>
 
-        <section id="profil">
+        <section id="profil" class="mobile-block">
           <h2>Profil</h2>
 
           <!-- CV Polyvalent -->
@@ -76,56 +83,16 @@
           </p> -->
         </section>
 
-        <section>
-          <h2>COMPÉTENCES</h2>
-          <div>🔧 <strong>Langages & frameworks :</strong></div>
-          <ul class="skills-list">
-            <li class="skill-indent">JavaScript/TypeScript</li>
-            <li class="skill-indent">React, Node.js</li>
-            <li class="skill-indent">PHP, Symfony</li>
-          </ul>
-          <div>💾 <strong>Bases de données :</strong></div>
-          <ul class="skills-list">
-            <li class="skill-indent">SQL (MySQL, MariaDB)</li>
-            <li class="skill-indent">MongoDB, Mongoose</li>
-            <li class="skill-indent">ORM Doctrine</li>
-          </ul>
-          <div>🎨 <strong>Intégration & UI :</strong></div>
-          <ul class="skills-list">
-            <li class="skill-indent">HTML, CSS, Bootstrap</li>
-            <li class="skill-indent">Figma, Adobe XD</li>
-          </ul>
-          <div>⚙️ <strong>CMS & outils :</strong></div>
-          <ul class="skills-list">
-            <li class="skill-indent">WordPress</li>
-            <li class="skill-indent">Git, GitHub</li>
-          </ul>
-        </section>
-
-        <section id="soft-skills">
-          <h2>Soft Skills</h2>
-          <ul class="skills">
-            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Esprit d’équipe</strong></li>
-            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Rigueur et organisation</strong></li>
-            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Communication</strong></li>
-            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Adaptabilité</strong></li>
-            <!-- <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Gestion du temps</strong></li>
-            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Esprit d’analyse</strong></li>
-            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Créativité</strong></li>
-            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Patience</strong></li> -->
-          </ul>
-        </section>
-
         <section id="contact">
           <h2>Contact</h2>
           <ul>
             <li id="mail">
               <img src="assets/icons/icons8-nouveau-message-100.png" alt="Icône Github" class="icons" >
-              <a href="mailto:alexandredelapierre@gmail.com">alexandredelapierre@gmail.com
+              <a href="mailto:alexandredelapierre@gmail.com"><strong>alexandredelapierre@gmail.com</strong>
               </a>
             </li>
             <li>
-              <img src="assets/icons/icons8-téléphone-64.png" alt="Icône de téléphone" class="icons"> +33 6 27 17 51 98
+              <img src="assets/icons/icons8-téléphone-64.png" alt="Icône de téléphone" class="icons"><strong>+33 6 27 17 51 98</strong>
             </li>
             <!-- <li>
               <img src="assets/icons/icons8-téléphone-64.png" alt="Icône de téléphone" class="icons"> +33 62 717 51 98
@@ -134,7 +101,7 @@
               <img src="assets/icons/icons8-location-50.png" alt="Icône d'adresse" class="icons"> Basé à Annecy
             </li> -->
             <li>
-              <img src="assets/icons/icons8-location-50.png" alt="Icône d'adresse" class="icons"> 74960 Annecy 
+              <img src="assets/icons/icons8-location-50.png" alt="Icône d'adresse" class="icons"><strong>74960 Annecy</strong>  
               <!-- <a href="https://www.google.com/maps/place/R%C3%A9sidence+%C3%89tudiante,+8+Rue+du+Rond+Point,+74960+Annecy/" target="_blank">
                 8 rue du rond point, <br> <span class="indent">74960 Annecy</span>
               </a> -->
@@ -146,19 +113,19 @@
             <!-- <li>
               Nationalité : Française
             </li> -->
-            <li>
+            <!-- <li>
               <img src="assets/icons/icons8-CV-100.png" alt="Icône Github" class="icons" >
               <a href="https://portfolio.alexdelapierre.fr/" target="_blank">
                 Portfolio 
               </a>
-            </li>
+            </li> -->
             <!-- <li>
               <img src="assets/icons/icons8-CV-100.png" alt="Icône Github" class="icons" >
               <a href="https://cv.alexdelapierre.fr/" target="_blank">
                 CV en ligne 
               </a>
             </li> -->
-            <li>
+            <!-- <li>
               <img src="assets/icons/icons8-linkedin-50.png" alt="Icône Linkedin" class="icons" >
               <a href="https://www.linkedin.com/in/alexandre-delapierre/" target="_blank">
                 Linkedin
@@ -169,7 +136,7 @@
               <a href="https://github.com/AlexDelapierre" target="_blank">
                 GitHub
               </a>
-            </li>
+            </li> -->
             <!-- <li>
               <img src="assets/icons/icons8-CV-100.png" alt="Icône Github" class="icons" >
               <a href="https://cv.alexdelapierre.fr/" target="_blank">
@@ -190,7 +157,47 @@
             </li> -->
           </ul>
         </section>
-        
+
+        <section>
+          <h2>COMPÉTENCES</h2>
+          <h3><strong>Langages & frameworks :</strong></h3>
+          <ul class="skills-list">
+            <li class="skill-indent"><strong>JavaScript/TypeScript</strong></li>
+            <li class="skill-indent"><strong>React, Node.js</strong></li>
+            <li class="skill-indent"><strong>PHP, Symfony</strong></li>
+          </ul>
+          <h3><strong>Bases de données :</strong></h3>
+          <ul class="skills-list">
+            <li class="skill-indent"><strong>SQL</strong> (MySQL, MariaDB)</li>
+            <li class="skill-indent"><strong>MongoDB</strong>, Mongoose</li>
+            <li class="skill-indent"><strong>ORM Doctrine</strong></li>
+          </ul>
+          <h3><strong>Intégration & UI :</strong></h3>
+          <ul class="skills-list">
+            <li class="skill-indent"><strong>HTML, CSS, Bootstrap</strong></li>
+            <li class="skill-indent"><strong>Figma, Adobe XD</strong></li>
+          </ul>
+          <h3><strong>CMS & outils :</strong></h3>
+          <ul class="skills-list">
+            <li class="skill-indent"><strong>WordPress</strong></li>
+            <li class="skill-indent"><strong>Git, GitHub</strong></li>
+          </ul>
+        </section>
+
+        <section id="soft-skills">
+          <h2>Soft Skills</h2>
+          <ul class="skills">
+            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Esprit d’équipe</strong></li>
+            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Rigueur et organisation</strong></li>
+            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Communication</strong></li>
+            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Adaptabilité</strong></li>
+            <!-- <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Gestion du temps</strong></li>
+            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Esprit d’analyse</strong></li>
+            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Créativité</strong></li>
+            <li><i class="icon fas fa-check-circle text-darkblue"></i><strong>Patience</strong></li> -->
+          </ul>
+        </section>
+
         <section id="languages">
           <h2>Langues</h2>
           <p>
@@ -205,12 +212,12 @@
       <div id="right-column">
 
         <!-- Header -->
-        <div id="right-column-header" class="header">
-          <h1>
-            Alexandre <span class="text-blue text-uppercase">DELAPIERRE</span>
-          </h1>
-          <p>Développeur web full stack</p>
-          <ul class="infos">
+        <header class="desktop-block">
+          <h1>Développeur Web Full-Stack</h1>  
+          <p>
+            Diplômé d’un Bac+2 en développement web, je pratique la programmation depuis plus de 3 ans à travers des projets personnels et ma formation. Rigoureux, organisé et motivé, je suis prêt à m’investir pleinement au sein d’une équipe et à contribuer activement aux projets.
+          </p>
+          <!-- <ul class="infos">
             <li>
               <i class="icon fas fa-at text-blue"></i>
               <a href="mailto:alexandredelapierre@gmail.com">alexandredelapierre@gmail.com</a>
@@ -219,18 +226,61 @@
             <li>
               <i class="icon fas fa-map-marker-alt text-blue"></i> 8 rue du rond point, 74960 Annecy
             </li>
-          </ul>
-        </div>
+            <li>
+              <img src="assets/icons/icons8-CV-100.png" alt="Icône Github" class="icons" >
+              <a href="https://portfolio.alexdelapierre.fr/" target="_blank">
+                Portfolio 
+              </a>
+            </li>
+            <li>
+              <img src="assets/icons/icons8-linkedin-50.png" alt="Icône Linkedin" class="icons" >
+              <a href="https://www.linkedin.com/in/alexandre-delapierre/" target="_blank">
+                Linkedin
+              </a>
+            </li>
+            <li>
+              <img src="assets/icons/icons8-github-60.png" alt="Icône Github" class="icons" >
+              <a href="https://github.com/AlexDelapierre" target="_blank">
+                GitHub
+              </a>
+            </li>
+          </ul> -->
+          
+          <div class="lien-sociaux-container">
+            <!-- <h4 style="color: #4472c4;">Mes liens :</h4> -->
+            <nav aria-label="Liens professionnels">
+              <ul class="lien-sociaux">
+                  <li>
+                    <a href="[URL_PORTFOLIO]" target="_blank">
+                      <i class="fas fa-file-alt"></i> Portfolio
+                    </a>
+                  </li>
+                  <li>
+                    <a href="[URL_LINKEDIN]" target="_blank">
+                      <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                  </li>
+                  <li>
+                    <a href="[URL_GITHUB]" target="_blank">
+                      <i class="fab fa-github"></i> GitHub
+                    </a>
+                  </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
 
-        <div class="desktop-block" style="display:none;">
+        <!-- <div class="desktop-block" style="display:none;">
           <h1>Développeur Web Full-Stack</h1>  
           <hr id="h1-separateur">
-        </div>
+        </div> -->
 
-        <section id="projets">
-          <h2><span class="text-blue">Projets</span></h2>
+        <div class="content">
 
-          <div class="section">
+          <section id="projets">
+            <h2><span class="text-blue">Projets</span></h2>
+
+            <article>
               <h3>
                 Application web de vente d'occasion - React TypeScript + API Node.js/MongoDB 
                 <!-- <a href="" target="_blank" class="icons">
@@ -248,107 +298,107 @@
                 <em>🛠 Technos : React, TypeScript, Node.js, Express, MongoDB/Mongoose, JWT, Multer, HTML, CSS</em>
               </p> 
               <!-- <div class="projets-skills">🛠 Node.js, MongoDB, Mongoose, Express.js, JWT, Multer</div> -->
-            </div>
+            </article>
 
-          <div class="section">
-            <h3>
-              Site web pour restaurant en PHP (Symfony) et JavaScript
-              <a href="https://le-quai-antique.alexdelapierre.fr/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>  
-              <a href="https://github.com/AlexDelapierre/Le-Quai-Antique" target="_blank" class="icons">
-                <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
-              </a>
-            </h3>
-            <p>
-              <!-- J'ai réalisé le site web d'un restaurant sous Symfony dans lequel j'ai implémenté une 
-              interface d'administration, la mise en place d'un système d'authentification, ainsi qu'un 
-              formulaire de réservation validé en AJAX. Le tout en responsive design et mobile first. -->
-              <!-- Création d’un site vitrine pour un restaurant avec une interface d’administration dédiée à la gestion des menus et des réservations. Intégration d’un système d’authentification sécurisé et d’un formulaire de réservation dynamique avec validation asynchrone via AJAX. Le site est responsive et optimisé mobile-first. -->
-              Développement d’un site de restaurant administrable avec back-office sécurisé pour gérer les menus et les réservations. Création d’un compte admin en CLI et système d’authentification avec création de comptes utilisateurs. Formulaire de réservation dynamique avec gestion des plages horaires et validation en AJAX. Données de test injectées via DataFixtures (menus, créneaux, horaires). Architecture MVC avec Twig, routing Symfony et base de données gérée via Doctrine ORM. Design responsive mobile-first.         
-              <br>
-              <em>🛠 Technos : PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</em>
-            </p>
-            <!-- <div class="projets-skills">🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</div>           -->
-          </div>
+            <article>
+              <h3>
+                Site web pour restaurant en PHP (Symfony) et JavaScript
+                <a href="https://le-quai-antique.alexdelapierre.fr/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>  
+                <a href="https://github.com/AlexDelapierre/Le-Quai-Antique" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
+                </a>
+              </h3>
+              <p>
+                <!-- J'ai réalisé le site web d'un restaurant sous Symfony dans lequel j'ai implémenté une 
+                interface d'administration, la mise en place d'un système d'authentification, ainsi qu'un 
+                formulaire de réservation validé en AJAX. Le tout en responsive design et mobile first. -->
+                <!-- Création d’un site vitrine pour un restaurant avec une interface d’administration dédiée à la gestion des menus et des réservations. Intégration d’un système d’authentification sécurisé et d’un formulaire de réservation dynamique avec validation asynchrone via AJAX. Le site est responsive et optimisé mobile-first. -->
+                Développement d’un site de restaurant administrable avec back-office sécurisé pour gérer les menus et les réservations. Création d’un compte admin en CLI et système d’authentification avec création de comptes utilisateurs. Formulaire de réservation dynamique avec gestion des plages horaires et validation en AJAX. Données de test injectées via DataFixtures (menus, créneaux, horaires). Architecture MVC avec Twig, routing Symfony et base de données gérée via Doctrine ORM. Design responsive mobile-first.         
+                <br>
+                <em>🛠 Technos : PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</em>
+              </p>
+              <!-- <div class="projets-skills">🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</div>           -->
+            </article>
 
-          <div class="section">
-            <h3>
-              Application web de recettes de cuisine en PHP
-              <a href="https://cuisinea.alexdelapierre.fr/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>
-              <a href="https://github.com/AlexDelapierre/Cuisinea" target="_blank" class="icons">
-                <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
-              </a>
-              <!-- <em classe="date">06/2023 <i class="fas fa-long-arrow-alt-right"></i> 09/2023</em> -->
-            </h3>   
-            <p>
-              <!-- Dans le but de mettre en pratique mes compétences en PHP, j'ai réalisé une application
-              de recettes de cuisine qui permet à des utilisateurs de créer un compte et de pouvoir 
-              consulter, ajouter, modifier ou supprimer des recettes. -->
-              <!-- Réalisation d’une application permettant aux utilisateurs de créer un compte, consulter, ajouter, modifier et supprimer des recettes. Mise en place d’un système d’authentification et de gestion des utilisateurs. -->
-              Création d’une application web avec espace membre : inscription, authentification, ajout, modification et suppression de recettes personnelles. Base de données MySQL pour stocker les comptes et les recettes. Design responsive avec Bootstrap.
-              <br>
-              <em>🛠 Technos : PHP, MySQL, HTML, CSS, Bootstrap</em>
-            </p>
-              <!-- <div class="projets-skills">🛠 PHP, MySQL, HTML5, CSS3, Bootstrap</div> -->
-          </div>
+            <article>
+              <h3>
+                Application web de recettes de cuisine en PHP
+                <a href="https://cuisinea.alexdelapierre.fr/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>
+                <a href="https://github.com/AlexDelapierre/Cuisinea" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
+                </a>
+                <!-- <em classe="date">06/2023 <i class="fas fa-long-arrow-alt-right"></i> 09/2023</em> -->
+              </h3>   
+              <p>
+                <!-- Dans le but de mettre en pratique mes compétences en PHP, j'ai réalisé une application
+                de recettes de cuisine qui permet à des utilisateurs de créer un compte et de pouvoir 
+                consulter, ajouter, modifier ou supprimer des recettes. -->
+                <!-- Réalisation d’une application permettant aux utilisateurs de créer un compte, consulter, ajouter, modifier et supprimer des recettes. Mise en place d’un système d’authentification et de gestion des utilisateurs. -->
+                Création d’une application web avec espace membre : inscription, authentification, ajout, modification et suppression de recettes personnelles. Base de données MySQL pour stocker les comptes et les recettes. Design responsive avec Bootstrap.
+                <br>
+                <em>🛠 Technos : PHP, MySQL, HTML, CSS, Bootstrap</em>
+              </p>
+                <!-- <div class="projets-skills">🛠 PHP, MySQL, HTML5, CSS3, Bootstrap</div> -->
+            </article>
 
-          <div class="section">
-            <h3>
-              Site e-commerce en PHP (Symfony)
-              <a href="https://site-e-commerce.alexdelapierre.fr/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>         
-              <a href="https://github.com/AlexDelapierre/site-e-commerce" target="_blank" class="icons">
-                <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
-              </a>
-            </h3>   
-            <p>
-              <!-- Développement d'un site e-commerce avec Symfony intégrant une interface d'administration 
-              pour la gestion CRUD des articles (tri, filtrage, ajout, modification, suppression). 
-              Mise en place d'un système de gestion des utilisateurs avec authentification, panier, 
-              et espace client. -->
-              <!-- Développement d’un site e-commerce avec interface d’administration sécurisée et système d’authentification. Gestion des produits (CRUD, catégories, images…). Implémentation d’un panier, du traitement des commandes et d’un espace utilisateur. Intégration de services pour la vérification de compte et la réinitialisation des mots de passe via des tokens JWT et l’envoi de mails. Données gérées avec Doctrine ORM. Design responsive avec Twig et Bootstrap. -->
-              Développement d’un site e-commerce avec interface d’administration sécurisée et système d’authentification. Gestion des produits (CRUD, catégories, images, ...), panier, traitement des commandes et espace utilisateur. Intégration des services envoi de mails et tokens JWT pour la vérification de compte et la réinitialisation des mots de passe, ainsi que la gestion d’images. Données gérées avec Doctrine ORM. Design responsive avec Twig et Bootstrap.
-              <br>
-              <em>🛠 Technos : PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</em>
-            </p>
-              <!-- <div class="projets-skills">🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</div> -->
-          </div>
+            <article>
+              <h3>
+                Site e-commerce en PHP (Symfony)
+                <a href="https://site-e-commerce.alexdelapierre.fr/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>         
+                <a href="https://github.com/AlexDelapierre/site-e-commerce" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
+                </a>
+              </h3>   
+              <p>
+                <!-- Développement d'un site e-commerce avec Symfony intégrant une interface d'administration 
+                pour la gestion CRUD des articles (tri, filtrage, ajout, modification, suppression). 
+                Mise en place d'un système de gestion des utilisateurs avec authentification, panier, 
+                et espace client. -->
+                <!-- Développement d’un site e-commerce avec interface d’administration sécurisée et système d’authentification. Gestion des produits (CRUD, catégories, images…). Implémentation d’un panier, du traitement des commandes et d’un espace utilisateur. Intégration de services pour la vérification de compte et la réinitialisation des mots de passe via des tokens JWT et l’envoi de mails. Données gérées avec Doctrine ORM. Design responsive avec Twig et Bootstrap. -->
+                Développement d’un site e-commerce avec interface d’administration sécurisée et système d’authentification. Gestion des produits (CRUD, catégories, images, ...), panier, traitement des commandes et espace utilisateur. Intégration des services envoi de mails et tokens JWT pour la vérification de compte et la réinitialisation des mots de passe, ainsi que la gestion d’images. Données gérées avec Doctrine ORM. Design responsive avec Twig et Bootstrap.
+                <br>
+                <em>🛠 Technos : PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</em>
+              </p>
+                <!-- <div class="projets-skills">🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</div> -->
+            </article>
 
-          <div class="section">
-            <h3>
-              Site de BD/Manga en PHP et JavaScript   
-              <a href="https://bookeo.alexdelapierre.fr/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>
-              <a href="https://github.com/AlexDelapierre/site_de_gestion_de_bd-manga-livre" target="_blank" class="icons">
-                <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
-              </a>
-              <!-- <em class="date">01/2023 <i class="fas fa-long-arrow-alt-right"></i> 03/2023</em> -->
-            </h3>    
-            <p>
-              <!-- Dans le but de mettre en pratique mes compétences en PHP natif orienté objet, j'ai développé
-              un site permettant d'administrer une collection de bd/manga.
-              Le site permet à un administrateur de s'authentifier, d'ajouter, modifier ou supprimer 
-              les différents articles.  -->
-              <!-- Mise en œuvre d’une plateforme pour administrer une collection de BD/Manga. L’interface administrateur propose l’authentification, l’ajout, la modification et la suppression d’articles. -->
-              Mise en œuvre d’une plateforme permettant d’administrer une collection de BD/Manga. L’accès à l’interface administrateur est sécurisé par un système d’authentification et permet la gestion des articles (ajout, modification, suppression). Implémentation d’un carrousel dynamique en JavaScript pour faire défiler les visuels de manière fluide.                
-              <br>
-              <em>🛠 Technos : PHP, MySQL, JavaScript, HTML, CSS, Bootstrap</em>
-            </p> 
-              <!-- <div class="projets-skills">🛠 PHP, MySQL, JavaScript, HTML5, CSS3, Bootstrap</div> -->
-          </div>
-        </section>
+            <article>
+              <h3>
+                Site de BD/Manga en PHP et JavaScript   
+                <a href="https://bookeo.alexdelapierre.fr/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>
+                <a href="https://github.com/AlexDelapierre/site_de_gestion_de_bd-manga-livre" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
+                </a>
+                <!-- <em class="date">01/2023 <i class="fas fa-long-arrow-alt-right"></i> 03/2023</em> -->
+              </h3>    
+              <p>
+                <!-- Dans le but de mettre en pratique mes compétences en PHP natif orienté objet, j'ai développé
+                un site permettant d'administrer une collection de bd/manga.
+                Le site permet à un administrateur de s'authentifier, d'ajouter, modifier ou supprimer 
+                les différents articles.  -->
+                <!-- Mise en œuvre d’une plateforme pour administrer une collection de BD/Manga. L’interface administrateur propose l’authentification, l’ajout, la modification et la suppression d’articles. -->
+                Mise en œuvre d’une plateforme permettant d’administrer une collection de BD/Manga. L’accès à l’interface administrateur est sécurisé par un système d’authentification et permet la gestion des articles (ajout, modification, suppression). Implémentation d’un carrousel dynamique en JavaScript pour faire défiler les visuels de manière fluide.                
+                <br>
+                <em>🛠 Technos : PHP, MySQL, JavaScript, HTML, CSS, Bootstrap</em>
+              </p> 
+                <!-- <div class="projets-skills">🛠 PHP, MySQL, JavaScript, HTML5, CSS3, Bootstrap</div> -->
+            </article>
+          </section>
 
-        <section class="print-block" style="display:none;">
-          <h2>
-            <span class="text-blue">Projets</span>
-          </h2>
+          <section class="print-block" style="display:none;">
+            <h2>
+              <span class="text-blue">Projets</span>
+            </h2>
 
-          <div class="section">
+            <article>
               <h3>
                 Application web de vente d'occasion - React/TS + Node.js
                 <!-- <a href="" target="_blank" class="icons">
@@ -364,155 +414,155 @@
                 <li>Stockage des données des objets et des utilisateurs via MongoDB</li>
               </ul>  
               <div class="projets-skills"><em>🛠 React, TypeScript, Node.js, Express, MongoDB/Mongoose, JWT, Multer</em></div>
-            </div>
+            </article>
 
-          <div class="section">
-            <h3>
-              Site web pour restaurant en PHP (Symfony) et JavaScript
-              <a href="https://le-quai-antique.alexdelapierre.fr/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>  
-              <a href="https://github.com/AlexDelapierre/Le-Quai-Antique" target="_blank" class="icons">
-                <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
-              </a>
-            </h3>
-            <ul class="technical-skills">
-              <li>Back-office sécurisé pour gérer les menus et les réservations.</li>
-              <li>Formulaire de réservation dynamique avec validation en AJAX.</li>
-              <li>Authentification et gestion des comptes utilisateurs.</li>
-            </ul>  
-            <div class="projets-skills"><em>🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</em></div>          
-          </div>
+            <article>
+              <h3>
+                Site web pour restaurant en PHP (Symfony) et JavaScript
+                <a href="https://le-quai-antique.alexdelapierre.fr/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>  
+                <a href="https://github.com/AlexDelapierre/Le-Quai-Antique" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
+                </a>
+              </h3>
+              <ul class="technical-skills">
+                <li>Back-office sécurisé pour gérer les menus et les réservations.</li>
+                <li>Formulaire de réservation dynamique avec validation en AJAX.</li>
+                <li>Authentification et gestion des comptes utilisateurs.</li>
+              </ul>  
+              <div class="projets-skills"><em>🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</em></div>          
+            </article>
 
-          <div class="section">
-            <h3>
-              Application web de recettes de cuisine en PHP
-              <a href="https://cuisinea.alexdelapierre.fr/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>
-              <a href="https://github.com/AlexDelapierre/Cuisinea" target="_blank" class="icons">
-                <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
-              </a>
-            </h3>   
-            <ul class="technical-skills">
-              <li>Espace membre avec inscription et connexion sécurisée.</li>
-              <li>Implémentation d'un système CRUD pour la gestion des recettes</li>
-              <li>Stockage des utilisateurs et recettes en base de données MySQL.</li>
+            <article>
+              <h3>
+                Application web de recettes de cuisine en PHP
+                <a href="https://cuisinea.alexdelapierre.fr/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>
+                <a href="https://github.com/AlexDelapierre/Cuisinea" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
+                </a>
+              </h3>   
+              <ul class="technical-skills">
+                <li>Espace membre avec inscription et connexion sécurisée.</li>
+                <li>Implémentation d'un système CRUD pour la gestion des recettes</li>
+                <li>Stockage des utilisateurs et recettes en base de données MySQL.</li>
               </ul>
               <div class="projets-skills"><em>🛠 PHP, MySQL, HTML, CSS, Bootstrap</em></div>
-          </div>
+            </article>
 
-          <div class="section">
-            <h3>
-              Site e-commerce en PHP (Symfony)
-              <a href="https://site-e-commerce.alexdelapierre.fr/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>         
-              <a href="https://github.com/AlexDelapierre/site-e-commerce" target="_blank" class="icons">
-                <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
-              </a>
-            </h3>   
-           <ul class="technical-skills">
+            <article>
+              <h3>
+                Site e-commerce en PHP (Symfony)
+                <a href="https://site-e-commerce.alexdelapierre.fr/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>         
+                <a href="https://github.com/AlexDelapierre/site-e-commerce" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
+                </a>
+              </h3>   
+              <ul class="technical-skills">
                 <li>Interface d'administration sécurisée pour gérer les produits.</li>
                 <li>Panier, commandes et espace utilisateur complets.</li>
                 <li>Envoi d'e-mails et gestion des tokens pour la sécurité.</li>
               </ul>
               <div class="projets-skills"><em>🛠 PHP/Symfony, MySQL (ORM Doctrine), JavaScript, Bootstrap</em></div>
-          </div>
+            </article>
 
-          <div class="section">
-            <h3>
-              Site de BD/Manga en PHP et JavaScript   
-              <a href="https://bookeo.alexdelapierre.fr/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>
-              <a href="https://github.com/AlexDelapierre/site_de_gestion_de_bd-manga-livre" target="_blank" class="icons">
-                <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
-              </a>
-            </h3>    
-            <ul class="technical-skills">
+            <article  id="last-article">
+              <h3>
+                Site de BD/Manga en PHP et JavaScript   
+                <a href="https://bookeo.alexdelapierre.fr/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>
+                <a href="https://github.com/AlexDelapierre/site_de_gestion_de_bd-manga-livre" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/github-mark.svg" alt="Icône Github" class="Github_Icon"/>
+                </a>
+              </h3>    
+              <ul class="technical-skills">
                 <li>Plateforme permettant d'administrer une collection de BD/Manga</li>
                 <li>CRUD complet pour la gestion de la collection BD/Manga.</li>
                 <li>Carrousel dynamique en JavaScript pour les visuels.</li>
               </ul>
               <div class="projets-skills"><em>🛠 PHP, MySQL, JavaScript, HTML, CSS, Bootstrap</em></div>
-          </div>
-        </section>
+            </article>
+          </section>
 
-        <hr>
+          <!-- <hr> -->
 
-        <section id="formations">
-            <h2><span class="text-blue">Formation</span></h2>
-          <div class="section">
+          <section id="formations">
+              <h2><span class="text-blue">Formation</span></h2>
+            <article>
               <h3>Graduate Développeur web full stack - Studi
                 <!-- <a href="https://www.studi.com/fr/formation/developpement/graduate-developpeur-web-full-stack" target="_blank" class="icons">
                   <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
                 </a> -->
                 <span class="date">01/2022 <i class="fas fa-long-arrow-alt-right"></i> 10/2023</span>
               </h3>  
-            <p>
-              <strong>Bac+2 (Titre RNCP Niveau 5) - Développeur web et web mobile</strong> 
-              <a href="https://www.francecompetences.fr/recherche/rncp/37674/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>
-              <br />
-              Formation avec l’école Studi de 1 an et 9 mois axée sur le développement front-end et back-end d’applications web, incluant le maquettage (Figma, AdobeXD), la création d’interfaces utilisateur dynamiques, la conceptualisation (UML, Merise) et l’intégration de bases de données relationnelles, le développement de composants d’accès aux données (requêtes SQL ou ORM), de composants métier côté serveur, et de plateformes d’administration.
-              <!-- Formation de un an et neuf mois avec l’école Studi, axée sur le développement front-end et back-end d’applications web. -->
-              <br />
-              <!-- (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
-              <em>🛠 Technos : HTML, CSS, Bootstrap, JavaScript, SQL, PHP, Symfony, WordPress, React, Figma, Adobe XD, Git, GitHub.</em>
-              <!-- Formation avec l'école Studi sur le développement d'applications web (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
-            </p>
-          </div>
-        </section>
+              <p>
+                <strong>Bac+2 (Titre RNCP Niveau 5) - Développeur web et web mobile</strong> 
+                <a href="https://www.francecompetences.fr/recherche/rncp/37674/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>
+                <br />
+                Formation avec l’école Studi de 1 an et 9 mois axée sur le développement front-end et back-end d’applications web, incluant le maquettage (Figma, AdobeXD), la création d’interfaces utilisateur dynamiques, la conceptualisation (UML, Merise) et l’intégration de bases de données relationnelles, le développement de composants d’accès aux données (requêtes SQL ou ORM), de composants métier côté serveur, et de plateformes d’administration.
+                <!-- Formation de un an et neuf mois avec l’école Studi, axée sur le développement front-end et back-end d’applications web. -->
+                <br />
+                <!-- (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
+                <em>🛠 Technos : HTML, CSS, Bootstrap, JavaScript, SQL, PHP, Symfony, WordPress, React, Figma, Adobe XD, Git, GitHub.</em>
+                <!-- Formation avec l'école Studi sur le développement d'applications web (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
+              </p>
+            </article>
+          </section>
 
-        <section class="print-block" style="display:none;">
+          <section class="print-block" style="display:none;">
             <h2><span class="text-blue">Formation</span></h2>
-          <div class="section">
+            <article>
               <h3>Graduate Développeur web full stack - Studi
                 <!-- <a href="https://www.studi.com/fr/formation/developpement/graduate-developpeur-web-full-stack" target="_blank" class="icons">
                   <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
                 </a> -->
                 <span class="date">01/2022 <i class="fas fa-long-arrow-alt-right"></i> 10/2023</span>
               </h3>  
-            <p>
-              <strong>Bac+2 (Titre RNCP Niveau 5) - Développeur web et web mobile</strong> 
-              <a href="https://www.francecompetences.fr/recherche/rncp/37674/" target="_blank" class="icons">
-                <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
-              </a>
-              <br />
-              <!-- Formation avec l’école Studi de 1 an et 9 mois axée sur le développement front-end et back-end d’applications web, incluant le maquettage (Figma, AdobeXD), la création d’interfaces utilisateur dynamiques, la conceptualisation (UML, Merise) et l’intégration de bases de données relationnelles, le développement de composants d’accès aux données (requêtes SQL ou ORM), de composants métier côté serveur, et de plateformes d’administration. -->
-              Formation de un an et neuf mois avec l’école Studi, axée sur le développement front-end et back-end d’applications web.
-              <br />
-              <!-- (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
-              <em>🛠 HTML, CSS, Bootstrap, JavaScript, SQL, PHP, Symfony, WordPress, React, Figma, Adobe XD, Git, GitHub.</em>
-              <!-- Formation avec l'école Studi sur le développement d'applications web (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
-            </p>
-          </div>
-        </section>
+              <p>
+                <strong>Bac+2 (Titre RNCP Niveau 5) - Développeur web et web mobile</strong> 
+                <a href="https://www.francecompetences.fr/recherche/rncp/37674/" target="_blank" class="icons">
+                  <img src="assets/icons/SVG/link-solid.svg" alt="Icône lien" class="Link_Icon"/>
+                </a>
+                <br />
+                <!-- Formation avec l’école Studi de 1 an et 9 mois axée sur le développement front-end et back-end d’applications web, incluant le maquettage (Figma, AdobeXD), la création d’interfaces utilisateur dynamiques, la conceptualisation (UML, Merise) et l’intégration de bases de données relationnelles, le développement de composants d’accès aux données (requêtes SQL ou ORM), de composants métier côté serveur, et de plateformes d’administration. -->
+                Formation de un an et neuf mois avec l’école Studi, axée sur le développement front-end et back-end d’applications web.
+                <br />
+                <!-- (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
+                <em>🛠 HTML, CSS, Bootstrap, JavaScript, SQL, PHP, Symfony, WordPress, React, Figma, Adobe XD, Git, GitHub.</em>
+                <!-- Formation avec l'école Studi sur le développement d'applications web (PHP, Symfony, SQL, JavaScript, TypeScript, React, HTML, CSS, Bootstrap, Wordpress). -->
+              </p>
+            </article>
+          </section>
 
-        <hr>
-        
-        <section id="others-experiences">
-            <h2><span class="text-blue">Parcours professionnel</span></h2>
+          <!-- <hr> -->
+          
+          <section id="others-experiences">
+              <h2><span class="text-blue">Parcours professionnel</span></h2>
 
-          <div class="section">
-              <h3>Monteur-câbleur - Euroconcep (intérim) <span class="date">11/2023 <i class="fas fa-long-arrow-alt-right"></i> 01/2025</span></h3>    
-            <p>
-              Lecture de schémas techniques, assemblage et câblage d’armoires électriques industrielles. Expérience développant <strong>rigueur, gestion du temps, sens du détail et travail en équipe</strong>. 
-            </p> 
-          </div>
+            <article>
+                <h3>Monteur-câbleur - Euroconcep (intérim) <span class="date">11/2023 <i class="fas fa-long-arrow-alt-right"></i> 01/2025</span></h3>    
+              <p>
+                Lecture de schémas techniques, assemblage et câblage d’armoires électriques industrielles. Expérience développant <strong>rigueur, gestion du temps, sens du détail et travail en équipe</strong>. 
+              </p> 
+            </article>
 
-          <div class="section">
-              <h3>Professeur de guitare - Écoles de musique <span class="date">2012 <i class="fas fa-long-arrow-alt-right"></i> 2021</span></h3>
-            <p>
-              Enseignement de la guitare dans plusieurs écoles (OCA, Mélodia, Les Amis de la Musique) et à domicile. Expérience renforçant <strong>pédagogie, écoute, patience et sens de l’organisation</strong>.                
-            </p> 
-          </div>
-        </section>
-
+            <article>
+                <h3>Professeur de guitare - Écoles de musique <span class="date">2012 <i class="fas fa-long-arrow-alt-right"></i> 2021</span></h3>
+              <p>
+                Enseignement de la guitare dans plusieurs écoles (OCA, Mélodia, Les Amis de la Musique) et à domicile. Expérience renforçant <strong>pédagogie, écoute, patience et sens de l’organisation</strong>.                
+              </p> 
+            </article>
+          </section>
+        </div>
       </div>
-    </div>
+    </main>
     <script src="script.js"></script>
     <!-- <script src="https://kit.fontawesome.com/be510fdfc6.js" crossorigin="anonymous"></script> -->
   </body>
