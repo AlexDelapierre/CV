@@ -369,6 +369,9 @@ article em  {
   #left-column {
     padding: 17px;
   }
+  section {
+  margin-bottom: 1.4rem;
+  }
   /* #right-column {
   padding: 20px;
   } */
@@ -379,14 +382,8 @@ article em  {
     /* font-size: 0.9rem; */
     padding: 1.4rem 1rem 1rem 1.5rem;
   }
-  section {
-  margin-bottom: 1.4rem;
-} 
   article {
   margin-bottom: 0.6rem;
-  }
-  #left-column section {
-  margin-bottom: 2rem;
   }
   .portrait-cont {
   width: 11rem;
