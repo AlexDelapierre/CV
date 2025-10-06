@@ -42,7 +42,6 @@ h1 {
 }
 
 h2 {
-  /* letter-spacing: 1px; */
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -166,17 +165,7 @@ ul {
   line-height: 1;
 }  
 
-/* .infos {
-  columns: 2;
-  list-style-type: none;
-  padding: 0;
-} */
-
 /* ----------------------------------------- RIGHT COLUMN --------------------------------------- */
-/* #right-column {
-  grid-area: right-column;
-  padding: 30px;
-} */
 
 /* HEADER */
 header {
@@ -188,7 +177,7 @@ header {
   justify-content: center;
 }
 header p {
-    margin-bottom: 10px; /* Ajoute un peu d'espace avant les liens */
+    margin-bottom: 10px; 
 }
 .lien-sociaux-container {
   display: flex;
@@ -201,7 +190,6 @@ header p {
   gap: 15px; 
 }
 .lien-sociaux li {
-    /* Assure que chaque lien est bien une boîte */
     display: inline-block; 
 }
 .lien-sociaux a {
@@ -215,16 +203,16 @@ header p {
   padding: 10px 25px;
 }
 
-#h1-separateur {
-  /* border-top: 3px solid #000; */
-  border-top: 3px solid #4472c4;
-  margin-bottom: 0.9rem;
+.experiences-title {
+  display: flex;
+  align-items: center; 
+  gap: 0.4rem; 
 }
 
-hr{
-  border: none;            
-  border-top: 2px solid #4472c4;
-  margin-bottom: 10px; 
+.experiences-title small {
+  font-size: 0.5em; 
+  font-weight: 400;
+  text-transform: none; 
 }
 
 article {
@@ -235,15 +223,8 @@ article em  {
   margin-left: -0.3em;
 }
 
-.technical-skills {
-  /* list-style-type: circle; */
-}
-
 .projets-skills{
   margin-top: 1px;
-  /* margin: 0; */
-  /* padding-left: 0; */
-  /* list-style-position: inside;  */
 }
 
 .content ul {
@@ -254,7 +235,7 @@ article em  {
 .content ul li::before {
   content: '•';
   color: black;
-  margin-right: 0.4em; /* ajuste ici l'espace */
+  margin-right: 0.4em; 
   font-weight: bold;
 }
 
@@ -301,8 +282,6 @@ article em  {
   main {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* grid-template-areas:
-      "left-column right-column"; */
     grid-template-areas: 
       "left-column header"
       "left-column content";  
@@ -319,13 +298,16 @@ article em  {
   margin-bottom: 1rem;
   }
   #left-column section {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   }
   .date {
   margin-left: 1rem;
   }
   .job-title {
     color: #4472c4;
+  }
+  .experiences-title small {
+  font-size: 0.7em; 
   }
 }
 
@@ -347,16 +329,12 @@ article em  {
     padding: 17px;
   }
   section {
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.6rem;
   }
-  /* #right-column {
-  padding: 20px;
-  } */
   header {
     padding: 1rem;
   }
   .content {
-    /* font-size: 0.9rem; */
     padding: 1.4rem 1rem 1rem 1.5rem;
   }
   article {
@@ -378,5 +356,8 @@ article em  {
   }
    #contact #mail {
   font-size: 0.8rem;
+  }
+  .experiences-title small {
+  font-size: 0.7em; 
   }
 }
