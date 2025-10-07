@@ -280,11 +280,11 @@ article em  {
 /* média queries desktop */
 @media screen and (min-width: 1000px) {
   body {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
   main {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 0.8fr 2fr;
     grid-template-areas: 
       "left-column header"
       "left-column content";  
