@@ -246,32 +246,35 @@ article em  {
 
 /* SVG */
 
-.icon {
-  margin-right: 0.5rem;
-}
-
 .icons {
-  position: relative;
-  top:5px;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   max-width: 20px;
   max-height: 20px;
 }
 
 #left-column .icons {
-  top:2px;
+  position: relative;
+  top:3px;
   margin-right: 7px;
 }
 
+.skills-icon {
+  margin-right: 0.5rem;
+}
+
 .Github_Icon {
+  position: relative;
+  top:3px;
   width: 20px;
   height: 20px;
 }
 
 .Link_Icon {
-  width: 20px;
-  height: 20px;
+  position: relative;
+  top:5px;
+  width: 23px;
+  height: 23px;
 }
 
 /* média queries desktop */
@@ -298,7 +301,7 @@ article em  {
   margin-bottom: 1rem;
   }
   #left-column section {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   }
   .date {
   margin-left: 1rem;
@@ -308,6 +311,14 @@ article em  {
   }
   .experiences-title small {
   font-size: 0.7em; 
+  }
+  .Github_Icon {
+  width: 20px;
+  height: 20px;
+  }
+  .Link_Icon {
+    width: 23px;
+    height: 23px;
   }
 }
 
@@ -330,6 +341,9 @@ article em  {
   }
   section {
   margin-bottom: 1.6rem;
+  }
+  #left-column section {
+  margin-bottom: 1.8rem;
   }
   header {
     padding: 1rem;
@@ -359,5 +373,13 @@ article em  {
   }
   .experiences-title small {
   font-size: 0.7em; 
+  }
+  .Github_Icon {
+  width: 20px;
+  height: 20px;
+  }
+  .Link_Icon {
+    width: 23px;
+    height: 23px;
   }
 }
