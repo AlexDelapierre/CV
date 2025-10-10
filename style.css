@@ -7,7 +7,7 @@
 body {
   font-family: 'Roboto', Helvetica, Arial, sans-serif; 
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: clamp(1.1rem, 1.2vw, 1.2rem);
   line-height: 1.2;
 }
 
@@ -278,10 +278,7 @@ article em  {
 }
 
 /* média queries desktop */
-@media screen and (min-width: 1000px) {
-  body {
-    font-size: 1.2rem;
-  }
+@media screen and (min-width: 1024px) {
   main {
     display: grid;
     grid-template-columns: 0.8fr 2fr;
