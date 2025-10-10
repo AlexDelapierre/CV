@@ -2,7 +2,7 @@ function checkViewport() {
   const mobileBlocks = document.querySelectorAll('.mobile-block');
   const desktopBlocks = document.querySelectorAll('.desktop-block');
 
-  if (window.innerWidth <= 768) {
+  if (window.innerWidth <= 1023) {
     mobileBlocks.forEach(el => el.style.display = 'block');
     desktopBlocks.forEach(el => el.style.display = 'none');
   } else {
