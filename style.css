@@ -306,6 +306,9 @@ article em  {
   .job-title {
     color: #4472c4;
   }
+  .mail {
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+  }
   .experiences-title small {
   font-size: 0.7em; 
   }
@@ -365,7 +368,7 @@ article em  {
   .date {
   margin-left: 1rem;
   }
-   #contact #mail {
+   .mail {
   font-size: 0.8rem;
   }
   .experiences-title small {
