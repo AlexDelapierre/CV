@@ -27,6 +27,10 @@ section {
   margin-bottom: 1.5rem;
 }
 
+.last-section {
+  margin-bottom: 0rem;
+}
+
 h1 {
   font-weight: bold;
   text-align: center;
@@ -47,7 +51,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1rem;
+  font-size: 1em;
 }
 
 a {
@@ -320,6 +324,10 @@ article em  {
     width: 23px;
     height: 23px;
   }
+  .TP-icone {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media print {
@@ -369,17 +377,21 @@ article em  {
   margin-left: 1rem;
   }
    .mail {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   }
   .experiences-title small {
   font-size: 0.7em; 
   }
   .Github_Icon {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   }
   .Link_Icon {
-    width: 23px;
-    height: 23px;
+    width: 18px;
+    height: 18px;
+  }
+  .TP-icone {
+    width: 17px;
+    height: 17px;
   }
 }
